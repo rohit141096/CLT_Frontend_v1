@@ -1,0 +1,148 @@
+@mixin noSelect {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin singleLine {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@mixin listHeading {
+    font-family: font("semibold");
+    color: $dashboard-grey;
+    font-size: 0.85em;
+    text-transform: capitalize;
+    @include singleLine()
+}
+
+@mixin listIcon {
+    color: $border_grey;
+    font-size: 1em;
+}
+
+@mixin listDescription {
+    font-family: font("medium");
+    color: $border_grey;
+    font-size: 0.8em;
+    text-transform: capitalize;
+    @include singleLine()
+}
+
+@mixin listActionIcon {
+    color: $border_grey;
+    font-size: 1em;
+}
+
+@mixin listActionIconHover {
+    color: $blue-primary;
+}
+
+@mixin txtColorHoverAnim {
+    -webkit-transition: color 0.2s ease-out;
+    -moz-transition: color 0.2s ease-out;
+    -o-transition: color 0.2s ease-out;
+    transition: color 0.2s ease-out;
+}
+
+@mixin bgColorHoverAnim {
+    -webkit-transition: background-color 0.2s ease-out;
+    -moz-transition: background-color 0.2s ease-out;
+    -o-transition: background-color 0.2s ease-out;
+    transition: background-color 0.2s ease-out;
+}
+
+@mixin borderHoverAnim {
+    -webkit-transition: border 0.2s ease-out;
+    -moz-transition: border 0.2s ease-out;
+    -o-transition: border 0.2s ease-out;
+    transition: border 0.2s ease-out;
+}
+
+@mixin transformColorHoverAnim {
+    -webkit-transition: transform 0.2s ease-out;
+    -moz-transition: transform 0.2s ease-out;
+    -o-transition: transform 0.2s ease-out;
+    transition: transform 0.2s ease-out;
+}
+
+@mixin opacityColorHoverAnim {
+    -webkit-transition: opacity 0.2s ease-out;
+    -moz-transition: opacity 0.2s ease-out;
+    -o-transition: opacity 0.2s ease-out;
+    transition: opacity 0.2s ease-out;
+}
+
+@mixin activityHeadingBold {
+    font-family: font("semibold");
+    color: $blue-primary;
+    font-size: 0.85em;
+    text-transform: capitalize;
+}
+
+@mixin activityHeadingRegular {
+    font-family: font("medium");
+    color: $border_grey;
+    font-size: 0.85em;
+    text-transform: capitalize;
+}
+
+@mixin activityListTime {
+    font-family: font("medium");
+    color: $border_grey;
+    font-size: 0.8em;
+    text-transform: capitalize;
+    @include singleLine()
+}
+
+@mixin listLink {
+    font-family: font("medium");
+    color: $bubble-primary;
+    font-size: 0.8em;
+    text-transform: capitalize;
+    text-decoration: underline;
+    cursor: pointer;
+    @include singleLine()
+}
+
+@mixin listLinkHover {
+    color: $bubble-dark;
+}
+
+@mixin mobile {
+    @media (max-width: $mobile) {
+        @content
+    }
+};
+
+@mixin tab {
+    @media (max-width: $tab) {
+        @content
+    }
+};
+
+@mixin small {
+    @media (max-width: $small) {
+        @content
+    }
+};
+
+@mixin medium {
+    @media (max-width: $medium) {
+        @content
+    }
+};
+
+@mixin large {
+    @media (max-width: $large) {
+        @content
+    }
+};

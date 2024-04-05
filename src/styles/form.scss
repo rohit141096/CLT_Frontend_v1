@@ -1,0 +1,286 @@
+.cmsForm{width: $full-width;float: left;display: flex;flex-direction: column;gap: 25px;}
+.cmsDashboardForm{width: $full-width;float: left;display: flex;flex-direction: column;gap: 20px;}
+.cmsDashboardForm .cmsFormStep:first-child{margin-top: 5px;}
+.cmsFormStep{width: $full-width;float: left;position: relative;}
+.cmsFormStep.hasMarginTop{margin-top: 25px;}
+.cmsFormStep.hasMarginTop10{margin-top: 10px;}
+.cmsFormStepLable{float: left;position: absolute;top: -10px;left: 15px;background-color: $white;z-index: 2;padding: 2px 5px;}
+.cmsFormStepLableTxt{float: left;color: $text-description;font-size: 0.85em;font-family: font("medium");text-transform: capitalize;}
+.cmsFormStepLableMandatoryIco{float: left;font-size: 0.5em;color: $text-description;margin: 2px 0px 0px 5px;}
+.cmsFormStepInput{width: $full-width;float: left;position: relative;}
+.cmsFormStepInputText{width: $full-width;float: left;height: 50px;font-family: font("medium");font-size: 1em;padding: 0px 20px;border-radius: 5px;border: 1px solid $input_border;overflow: hidden;}
+.cmsFormStepInputSelect{width: $full-width;float: left;height: 50px;font-family: font("medium");font-size: 1em;padding: 0px 40px 0px 20px;-webkit-appearance: none;-moz-appearance: none;appearance: none;color: $dashboard-grey-dark;border-radius: 5px;border: 1px solid $input_border;overflow: hidden;text-transform: capitalize;}
+.cmsFormStepInputSelect:focus{border: 1px solid $bubble-primary;@include borderHoverAnim();}
+.cmsFormStepSelectToggleIcon{position: absolute;height: 52px;float: left;top: 0px;right: 0px;display: flex;align-items: center;padding-right: 15px;}
+.cmsFormStepSelectToggleIco{color: $dashboard-grey-dark;}
+.cmsFormStepInput.hasIcon.icoRight .cmsFormStepInputIcon{position: absolute;right: 1px;top: 1px;height: calc(100% - 2px);display: flex;align-items: center;justify-content: left;width: 35px;background-color: $white;border-radius: 5px;}
+.cmsFormStepInput.hasIcon.icoLeft .cmsFormStepInputIcon{position: absolute;left: 1px;top: 1px;height: calc(100% - 2px);display: flex;align-items: center;justify-content: right;width: 40px;background-color: $white;border-radius: 5px;}
+.cmsFormStepInput.hasIcon.icoRight .cmsFormStepInputText{padding-right: 55px;}
+.cmsFormStepInput.hasIcon.icoLeft .cmsFormStepInputText{padding-left: 55px;}
+.cmsFormStepInput.isLimited .cmsFormStepInputText{padding-right: 55px;}
+.cmsFormStepInputLimit{position: absolute;right: 3px;top: 5px;height: calc(100% - 10px);display: flex;align-items: center;justify-content: left;width: 35px;background-color: $white;border-radius: 5px;}
+.cmsFormStepInputProgress{height: 28px;width: 28px;}
+.cmsFormStepInputIco{float: left;font-size: 1.2em;color: $blue-primary;}
+.cmsFormStepInputIco.error{color: $text-error;}
+.cmsFormStepInputIco.warning{color: $text-warning;}
+.cmsFormStepInputIco.success{color: $text-success;}
+.cmsFormStepInputIco.clickable{cursor: pointer;}
+.cmsFormStepMessage{width: $full-width;float: left;margin-top: 5px;padding-left: 20px;}
+.cmsFormStepMessageTxt{float: left;color: $text-description;font-size: 0.85em;font-family: font("medium");text-transform: capitalize;}
+.cmsFormStepMessageTxt.error{color: $text-error;}
+.cmsFormStepMessageTxt.warning{color: $text-warning;}
+.cmsFormStepMessageTxt.success{color: $text-success;}
+.cmsPreLoginFormAcknowledgement{width: $full-width;position: relative;float: left;}
+.cmsPreLoginFormAcknowledgementMain{float: left;display: flex;align-items: center;flex-direction: row;gap: 5px;}
+.cmsPreLoginFormAcknowledgementCheckBox{float: left;}
+.cmsPreLoginFormAcknowledgementLable{float: left;}
+.cmsPreLoginFormAcknowledgementLableTxt{float: left;font-size: 0.9em;color: $text-description;font-family: font("medium");text-transform: capitalize;}
+.cmsPreLoginFormAcknowledgementAction{float: left;position: absolute;right: 0px;bottom: 2px;border-bottom: 2px solid $text-action-primary;background-color: $white;}
+.cmsPreLoginFormAcknowledgementActionTxt{float: left;font-size: 0.8em;color: $text-action-primary;font-family: font("medium");padding-bottom: 1px;cursor: pointer;transition: 0.2s;text-transform: capitalize;}
+.cmsPreLoginFormAcknowledgementAction:hover{border-bottom: 2px solid $text-action-primary-dark;}
+.cmsPreLoginFormAcknowledgementAction:hover .cmsPreLoginFormAcknowledgementActionTxt{color: $text-action-primary-dark;@include txtColorHoverAnim();}
+.cmsPreLoginFormInfoActionContainer{width: $full-width;float: left;position: relative;}
+.cmsPreLoginFormInfoMain{float: left;}
+.cmsPreLoginFormInfoMainTxt{float: left;font-size: 0.9em;color: $text-description;font-family: font("medium");text-transform: capitalize;}
+.cmsPreLoginFormInfoAction{float: left;margin: 1px 0px 0px 15px;border-bottom: 2px solid $text-action-primary;background-color: $white;}
+.cmsPreLoginFormInfoActionTxt{float: left;font-size: 0.8em;color: $text-action-primary;font-family: font("medium");padding-bottom: 1px;cursor: pointer;transition: 0.2s;text-transform: capitalize;}
+.cmsPreLoginFormInfoAction:hover{border-bottom: 2px solid $text-action-primary-dark;}
+.cmsPreLoginFormInfoAction:hover .cmsPreLoginFormInfoActionTxt{color: $text-action-primary-dark;@include txtColorHoverAnim();}
+.cmsPreLoginFormInfoActionRight{float: left;position: absolute;right: 0px;bottom: -1px;border-bottom: 2px solid $text-action-primary;background-color: $white;}
+.cmsPreLoginFormInfoActionRightTxt{float: left;font-size: 0.8em;color: $text-action-primary;font-family: font("medium");padding-bottom: 1px;cursor: pointer;transition: 0.2s;text-transform: capitalize;}
+.cmsPreLoginFormInfoActionRight:hover{border-bottom: 2px solid $text-action-primary-dark;}
+.cmsPreLoginFormInfoActionRight:hover .cmsPreLoginFormInfoActionRightTxt{color: $text-action-primary-dark;@include txtColorHoverAnim();}
+
+.cmsFormButton{float: left;position: relative;height: 44px;cursor: pointer;font-size: 1em;font-family: font("medium");text-transform: capitalize;overflow: hidden;z-index: 1;}
+.cmsFormButton.shortHight{height: 35px !important;font-size: 0.85em !important;}
+
+.cmsFormButton.fill:disabled:hover{cursor: not-allowed;}
+.cmsFormButton.fill:disabled::before {transition-duration: 800ms; position: absolute; width: 200%; height: 200%; content: ""; top: 110%; left: 50%; background-color: $disabledBg !important; -webkit-transform: translateX(-50%); transform: translateX(-50%); border-radius: 50%; z-index: -1;}
+.cmsFormButton.fill:disabled:hover:before { top: -40%;}
+.cmsFormButton.fill:disabled:hover { color: $disabledTxt; }
+
+.cmsFormButton.fill.dashboard{background-color: $bubble-primary;color: $white;}
+.cmsFormButton.fill.dashboard::before {transition-duration: 800ms; position: absolute; width: 200%; height: 200%; content: ""; top: 110%; left: 50%; background-color: $bubble-primary-dark; -webkit-transform: translateX(-50%); transform: translateX(-50%); border-radius: 50%; z-index: -1;}
+.cmsFormButton.fill.dashboard:hover:before { top: -40%;}
+.cmsFormButton.fill.dashboard:hover { color: $white; }
+
+.cmsFormButton.fill.primary{background-color: $blue-light;color: $white;}
+.cmsFormButton.fill.primary::before {transition-duration: 800ms; position: absolute; width: 200%; height: 200%; content: ""; top: 110%; left: 50%; background-color: $black; -webkit-transform: translateX(-50%); transform: translateX(-50%); border-radius: 50%; z-index: -1;}
+.cmsFormButton.fill.primary:hover:before { top: -40%;}
+.cmsFormButton.fill.primary:hover { color: $white; }
+
+.cmsFormButton.fill.error{background-color: $text-error;color: $white;}
+.cmsFormButton.fill.error::before {transition-duration: 800ms; position: absolute; width: 200%; height: 200%; content: ""; top: 110%; left: 50%; background-color: $text-error-hover; -webkit-transform: translateX(-50%); transform: translateX(-50%); border-radius: 50%; z-index: -1;}
+.cmsFormButton.fill.error:hover:before { top: -40%;}
+.cmsFormButton.fill.error:hover { color: $white; }
+
+.cmsFormButton.fill.warning{background-color: $text-warning;color: $white;}
+.cmsFormButton.fill.warning::before {transition-duration: 800ms; position: absolute; width: 200%; height: 200%; content: ""; top: 110%; left: 50%; background-color: $text-warning-hover; -webkit-transform: translateX(-50%); transform: translateX(-50%); border-radius: 50%; z-index: -1;}
+.cmsFormButton.fill.warning:hover:before { top: -40%;}
+.cmsFormButton.fill.warning:hover { color: $white; }
+
+.cmsFormButton.fill.success{background-color: $text-success;color: $white;}
+.cmsFormButton.fill.success::before {transition-duration: 800ms; position: absolute; width: 200%; height: 200%; content: ""; top: 110%; left: 50%; background-color: $text-success-hover; -webkit-transform: translateX(-50%); transform: translateX(-50%); border-radius: 50%; z-index: -1;}
+.cmsFormButton.fill.success:hover:before { top: -40%;}
+.cmsFormButton.fill.success:hover { color: $white; }
+
+.cmsFormButton.fill.white{background-color: $white;color: $blue-primary;}
+.cmsFormButton.fill.white::before {transition-duration: 800ms; position: absolute; width: 200%; height: 200%; content: ""; top: 110%; left: 50%; background-color: $disabledBg; -webkit-transform: translateX(-50%); transform: translateX(-50%); border-radius: 50%; z-index: -1;}
+.cmsFormButton.fill.white:hover:before { top: -40%;}
+.cmsFormButton.fill.white:hover { color: $disabledTxt; }
+
+.cmsFormButton.bordered.primary{background: none;border: 1px solid $blue-light;color: $blue-primary;}
+.cmsFormButton.bordered.primary:hover{background: $blue-light;border: 1px solid $blue-light;color: $white;}
+.cmsFormButton.bordered.error{background: none;border: 1px solid $text-error;color: $text-error;}
+.cmsFormButton.bordered.error:hover{background: $text-error;border: 1px solid $text-error;color: $white;}
+.cmsFormButton.bordered.warning{background: none;border: 1px solid $text-warning;color: $text-warning;}
+.cmsFormButton.bordered.warning:hover{background: $text-warning;border: 1px solid $text-warning;color: $white;}
+.cmsFormButton.bordered.success{background: none;border: 1px solid $text-success;color: $text-success;}
+.cmsFormButton.bordered.success:hover{background: $text-success;border: 1px solid $text-success;color: $white;}
+.cmsFormButton.bordered.white{background: none;border: 1px solid $white;color: $white;}
+.cmsFormButton.bordered.white:hover{background: $white;border: 1px solid $white;color: $blue-primary;}
+
+.cmsFormButton.underline{padding: 0px !important;height: 30px !important;}
+.cmsFormButton.underline.primary{background: none;border-bottom: 2px solid $blue-light;color: $blue-light;}
+.cmsFormButton.underline.error{background: none;border-bottom: 2px solid $text-error;color: $text-error;}
+.cmsFormButton.underline.warning{background: none;border-bottom: 2px solid $text-warning;color: $text-warning;}
+.cmsFormButton.underline.success{background: none;border-bottom: 2px solid $text-success;color: $text-success;}
+.cmsFormButton.underline.white{background: none;border-bottom: 2px solid $white;color: $white;}
+
+.cmsFormButton.fullWidth{width: $full-width;}
+.cmsFormButton.autoWidth{width: auto;padding: 0px 30px;}
+.cmsFormButton.halfWidth{width: 50%;}
+
+.cmsFormButton.shortBr{border-radius: 7px;}
+.cmsFormButton.fullBr{border-radius: 22px;}
+.cmsFormButton.noBr{border-radius: 0px;}
+
+.cmsFormButton.hasIcon.icoRight{padding-right: 50px;}
+.cmsFormButton.hasIcon.icoLeft{padding-left: 50px;}
+
+.cmsFormButton.hasIcon.fullWidth{padding: 0px;}
+.cmsFormButton.hasIcon.icoRight .cmsFormButtonIcon{position: absolute;right: 0px;top: 0px;height: $full-width;display: flex;align-items: center;justify-content: left;width: 30px;}
+.cmsFormButton.hasIcon.icoLeft .cmsFormButtonIcon{position: absolute;left: 0px;top: 0px;height: $full-width;display: flex;align-items: center;justify-content: right;width: 35px;}
+
+.cmsFormButton:disabled{background-color: $disabledBg !important;color: $disabledTxt !important;}
+
+.cmsFormButtonIco{float: left;font-size: 1.2em;color: $white;}
+.cmsFormButtonIco.shortHight .cmsFormIconButtonIco{font-size: 1em;}
+.cmsFormButtonIco.primary{color: $white;}
+.cmsFormButtonIco.error{color: $white;}
+.cmsFormButtonIco.warning{color: $white;}
+.cmsFormButtonIco.success{color: $white;}
+.cmsFormButtonIco.white{color: $blue-primary;}
+.cmsFormButtonIco.clickable{cursor: pointer;}
+
+.cmsFormIconButton{float: left;position: relative;height: 44px;width:44px;cursor: pointer;font-size: 1em;overflow: hidden;z-index: 1;display: flex;justify-content: center;align-items: center;}
+.cmsFormIconButton.shortHight{height: 35px !important;width: 35px !important;}
+
+.cmsFormIconButton.fill:disabled:hover{cursor: not-allowed;}
+.cmsFormIconButton.fill:disabled::before {transition-duration: 800ms; position: absolute; width: 200%; height: 200%; content: ""; top: 110%; left: 50%; background-color: $disabledBg !important; -webkit-transform: translateX(-50%); transform: translateX(-50%); border-radius: 50%; z-index: -1;}
+.cmsFormIconButton.fill:disabled:hover:before { top: -40%;}
+.cmsFormIconButton.fill:disabled:hover { color: $disabledTxt; }
+
+.cmsFormIconButton.fill.dashboard{background-color: $bubble-primary;color: $white;}
+.cmsFormIconButton.fill.dashboard::before {transition-duration: 800ms; position: absolute; width: 200%; height: 200%; content: ""; top: 110%; left: 50%; background-color: $bubble-primary-dark; -webkit-transform: translateX(-50%); transform: translateX(-50%); border-radius: 50%; z-index: -1;}
+.cmsFormIconButton.fill.dashboard:hover:before { top: -40%;}
+.cmsFormIconButton.fill.dashboard:hover { color: $white; }
+
+.cmsFormIconButton.fill.primary{background-color: $blue-light;color: $white;}
+.cmsFormIconButton.fill.primary::before {transition-duration: 800ms; position: absolute; width: 200%; height: 200%; content: ""; top: 110%; left: 50%; background-color: $black; -webkit-transform: translateX(-50%); transform: translateX(-50%); border-radius: 50%; z-index: -1;}
+.cmsFormIconButton.fill.primary:hover:before { top: -40%;}
+.cmsFormIconButton.fill.primary:hover { color: $white; }
+
+.cmsFormIconButton.fill.error{background-color: $text-error;color: $white;}
+.cmsFormIconButton.fill.error::before {transition-duration: 800ms; position: absolute; width: 200%; height: 200%; content: ""; top: 110%; left: 50%; background-color: $text-error-hover; -webkit-transform: translateX(-50%); transform: translateX(-50%); border-radius: 50%; z-index: -1;}
+.cmsFormIconButton.fill.error:hover:before { top: -40%;}
+.cmsFormIconButton.fill.error:hover { color: $white; }
+
+.cmsFormIconButton.fill.warning{background-color: $text-warning;color: $white;}
+.cmsFormIconButton.fill.warning::before {transition-duration: 800ms; position: absolute; width: 200%; height: 200%; content: ""; top: 110%; left: 50%; background-color: $text-warning-hover; -webkit-transform: translateX(-50%); transform: translateX(-50%); border-radius: 50%; z-index: -1;}
+.cmsFormIconButton.fill.warning:hover:before { top: -40%;}
+.cmsFormIconButton.fill.warning:hover { color: $white; }
+
+.cmsFormIconButton.fill.success{background-color: $text-success;color: $white;}
+.cmsFormIconButton.fill.success::before {transition-duration: 800ms; position: absolute; width: 200%; height: 200%; content: ""; top: 110%; left: 50%; background-color: $text-success-hover; -webkit-transform: translateX(-50%); transform: translateX(-50%); border-radius: 50%; z-index: -1;}
+.cmsFormIconButton.fill.success:hover:before { top: -40%;}
+.cmsFormIconButton.fill.success:hover { color: $white; }
+
+.cmsFormIconButton.fill.white{background-color: $white;color: $blue-primary;}
+.cmsFormIconButton.fill.white::before {transition-duration: 800ms; position: absolute; width: 200%; height: 200%; content: ""; top: 110%; left: 50%; background-color: $disabledBg; -webkit-transform: translateX(-50%); transform: translateX(-50%); border-radius: 50%; z-index: -1;}
+.cmsFormIconButton.fill.white:hover:before { top: -40%;}
+.cmsFormIconButton.fill.white:hover { color: $disabledTxt; }
+
+.cmsFormIconButton.bordered.primary{background: none;border: 1px solid $blue-light;color: $blue-primary;}
+.cmsFormIconButton.bordered.primary:hover{background: $blue-light;border: 1px solid $blue-light;color: $white;}
+.cmsFormIconButton.bordered.error{background: none;border: 1px solid $text-error;color: $text-error;}
+.cmsFormIconButton.bordered.error:hover{background: $text-error;border: 1px solid $text-error;color: $white;}
+.cmsFormIconButton.bordered.warning{background: none;border: 1px solid $text-warning;color: $text-warning;}
+.cmsFormIconButton.bordered.warning:hover{background: $text-warning;border: 1px solid $text-warning;color: $white;}
+.cmsFormIconButton.bordered.success{background: none;border: 1px solid $text-success;color: $text-success;}
+.cmsFormIconButton.bordered.success:hover{background: $text-success;border: 1px solid $text-success;color: $white;}
+.cmsFormIconButton.bordered.white{background: none;border: 1px solid $white;color: $white;}
+.cmsFormIconButton.bordered.white:hover{background: $white;border: 1px solid $white;color: $blue-primary;}
+
+.cmsFormIconButton.shortBr{border-radius: 7px;}
+.cmsFormIconButton.fullBr{border-radius: 22px;}
+.cmsFormIconButton.noBr{border-radius: 0px;}
+
+.cmsFormIconButton:disabled{background-color: $disabledBg !important;color: $disabledTxt !important;}
+
+.cmsFormIconButtonIco{float: left;font-size: 1.2em;color: $white;}
+.cmsFormIconButton.shortHight .cmsFormIconButtonIco{font-size: 1em;}
+.cmsFormIconButtonIco.primary{color: $white;}
+.cmsFormIconButtonIco.error{color: $white;}
+.cmsFormIconButtonIco.warning{color: $white;}
+.cmsFormIconButtonIco.success{color: $white;}
+.cmsFormIconButtonIco.white{color: $blue-primary;}
+.cmsFormIconButtonIco.clickable{cursor: pointer;}
+
+.cmsFormActions{width: $full-width;display: flex;flex-direction: row-reverse;justify-content: flex-start;gap: 15px;}
+
+/* MEDIA UPLOAD FORM ELEMENT STARTS */
+
+.mediaUploadFormElementContainer{width:150px;float: left;display: flex;flex-direction: column;}
+.mediaUploadFormElement{width: 140px;height: 140px;float: left;border-radius: 10px;background-color: $page_bg;overflow: hidden;box-shadow: 0px 2px 4px rgba(0,0,0,0.1);position: relative;}
+.mediaUploadFormElement:hover{box-shadow: 0px 4px 4px rgba(0,0,0,0.1);}
+.mediaUploadFormElementSelection{width: 140px;height: 140px;float: left;padding: 10px;@include flexCenter();box-shadow: 0px 2px 4px rgba(0,0,0,0.1);cursor: pointer;position: relative;}
+.mediaUploadFormElementIcon{float: left;}
+.mediaUploadFormElementIco{font-size: 2em;color: $dashboard-grey;float: left;}
+
+.mediaUploadFormSelectionPreview{width: $full-width;height: $full-width;float: left;@include flexCenter();}
+.mediaUploadFormSelectionPreviewSingleImage{width: $full-width;height: $full-width;float: left;@include flexCenter();position: relative;z-index: 9;}
+.cmsDashboardTableRowItemPreviewSingleImageMain{max-width: $full-width;max-height: $full-width;float: left;overflow: hidden;}
+.cmsDashboardTableRowItemPreviewSingleImageMainImg{max-width: $full-width;max-height: $full-width;float: left;}
+
+.mediaUploadFormSelectionPreviewAction{width: $full-width;float: left;position: absolute;bottom: 0px;left: 0px;background-color: $disabledBg;z-index: 99;padding: 5px 10px;@include flexCenter();cursor: pointer;}
+.mediaUploadFormSelectionPreviewAction:hover{background-color: $dashboard-red;@include bgColorHoverAnim();}
+.mediaUploadFormSelectionPreviewActionInner{float: left;@include flexCenter();gap: 10px;}
+.mediaUploadFormSelectionPreviewActionIcon{float: left;}
+.mediaUploadFormSelectionPreviewActionIco{float: left;color: $disabledTxt;font-size: 0.9em;}
+.mediaUploadFormSelectionPreviewAction:hover .mediaUploadFormSelectionPreviewActionInner .mediaUploadFormSelectionPreviewActionIcon .mediaUploadFormSelectionPreviewActionIco{color: $white;}
+.mediaUploadFormSelectionPreviewActionLable{float: left;}
+.mediaUploadFormSelectionPreviewActionLableTxt{float: left;color: $disabledTxt;text-transform: capitalize;font-size: 0.9em;font-family: font("medium");margin-top: -2px;}
+.mediaUploadFormSelectionPreviewAction:hover .mediaUploadFormSelectionPreviewActionInner .mediaUploadFormSelectionPreviewActionLable .mediaUploadFormSelectionPreviewActionLableTxt{color: $white;}
+
+.mediaUploadFormError{width: 100%;float: left;margin-top: 5px;padding-left: 20px;}
+.mediaUploadFormErrorTxt{float: left;color: $text-description;font-size: 0.85em;font-family: font("medium");text-transform: capitalize;}
+.mediaUploadFormErrorTxt.error{color: $text-error;}
+.mediaUploadFormErrorTxt.warning{color: $text-warning;}
+.mediaUploadFormErrorTxt.success{color: $text-success;}
+
+/* MEDIA UPLOAD FORM ELEMENT ENDS */
+
+/* PASSWORD PATTERN VALIDATION STARTS */
+
+.passwordPatternStep{margin-top: -20px;}
+
+.cmsFormStepPasswordPatternSingle{
+    width: $full-width;
+    float: left;
+    position: relative;
+    padding: 10px 0px 10px 40px;
+}
+
+.cmsFormStepPasswordPatternSingleIcon{
+    float: left;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    @include flexCenter;
+    width: 20px;
+}
+
+.cmsFormStepPasswordPatternSingleIco{
+    float: left;
+    font-size: 1.2em;
+}
+
+.cmsFormStepPasswordPatternSingleIco.errorIcon{
+    color: $text-error;
+}
+
+.cmsFormStepPasswordPatternSingleIco.successIcon{
+    color: $text-success;
+}
+
+.cmsFormStepPasswordPatternSingleLable{
+    width: $full-width;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+.cmsFormStepPasswordPatternSingleLableTxt{
+    float: left;
+    font-size: 0.9em;
+    font-family: font("regular");
+    color: $blue-light;
+    text-transform: capitalize;
+}
+
+/* PASSWORD PATTERN VALIDATION ENDS */
+
+
+.cmsForm .dashboardSplitContainer{margin-bottom: 0px;gap: 20px;}

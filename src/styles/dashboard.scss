@@ -1,0 +1,142 @@
+.dashboardPage{width: $full-width;height: 100vh;float: left;background-color: $page_bg;position: relative;}
+.dashboardHeaderContentFooterSidebar{width: calc($full-width - 300px);height: 100%;float: left;position: relative;z-index: 5;}
+.dashboardHeaderContent{width: $full-width;height: 100%;float: left;position: relative;z-index: 5;overflow-y: auto;padding-bottom: 62px;overflow-x: hidden;}
+.dashboardHeaderContent.hasSidebar{width: calc($full-width - 70px);}
+
+.dashboardPageBigHeader{width: $full-width;float: left;background-color: $white;padding: 50px 30px;border-bottom: 1px solid  $dashboard-border-bg;}
+.dashboardPageBigHeaderInner{width: $full-width;float: left;}
+.dashboardPageBigHeaderDetails{width: $full-width;float: left;display: flex;align-items: center;justify-content: space-between;flex-direction: row;}
+.dashboardPageBigHeaderUser{width: 60%;float: left;display: flex;align-items: center;flex-direction: row;position: relative;padding-left: 80px;}
+.dashboardPageBigHeaderUserAvatar{width: 65px;height: 100%;float: left;position: absolute;left: 0px;top: 0px;display: flex;align-items: center;}
+.dashboardPageBigHeaderUserAvatarImage{width: 65px;height: 65px;float: left;border-radius: 50%;overflow: hidden;}
+.dashboardPageBigHeaderUserAvatarImg{width: $full-width;height: $full-width;float: left;}
+.dashboardPageBigHeaderUserHeadingDescription{width: $full-width;float: left;display: flex;flex-direction: column;gap: 5px;}
+.dashboardPageBigHeaderUserHeading{width: $full-width;float: left;}
+.dashboardPageBigHeaderUserHeadingTxt{float: left;font-size: 2.2em;font-family: font("semibold");text-transform: capitalize;color: $blue-primary;}
+.dashboardPageBigHeaderUserDescription{width: $full-width;float: left;position: relative;padding: 0px;display: flex;align-items: center;}
+.dashboardPageBigHeaderUserDescription.hasIcon{padding: 0px 0px 0px 22px;}
+.dashboardPageBigHeaderUserDescriptionIcon{float: left;position: absolute;left: 0px;top: 0px;height: $full-width;display: flex;align-items: center;}
+.dashboardPageBigHeaderUserDescriptionIco{color: $dashboard-grey;float: left;font-size: 1em;}
+.dashboardPageBigHeaderUserDescriptionTxt{color: $dashboard-grey;float: left;font-size: 0.9em;font-family: font("medium");margin-top: 1px;}
+
+.dashboardPageDefaultHeader{width: $full-width;float: left;background-color: $white;padding: 30px 30px;border-bottom: 1px solid  $dashboard-border-bg;}
+.dashboardPageDefaultHeaderInner{width: $full-width;float: left;}
+.dashboardPageDefaultHeaderDetails{width: $full-width;float: left;display: flex;align-items: center;justify-content: space-between;flex-direction: row;}
+
+.dashboardPageDefaultHeaderContent{width: 55%;float: left;display: flex;flex-direction: column;gap: 5px;}
+.dashboardPageDefaultHeaderContentHeading{width: $full-width;float: left;}
+.dashboardPageDefaultHeaderContentHeadingTxt{float: left;font-size: 1.7em;font-family: font("semibold");text-transform: capitalize;color: $blue-primary;}
+.dashboardPageDefaultHeaderContentDescription{width: $full-width;float: left;position: relative;padding: 0px;display: flex;align-items: center;}
+.dashboardPageDefaultHeaderContentDescription.hasIcon{padding: 0px 0px 0px 22px;}
+.dashboardPageDefaultHeaderContentDescriptionIcon{float: left;position: absolute;left: 0px;top: 0px;height: $full-width;display: flex;align-items: center;}
+.dashboardPageDefaultHeaderContentDescriptionIco{color: $dashboard-grey;float: left;font-size: 1em;}
+.dashboardPageDefaultHeaderContentDescriptionTxt{color: $dashboard-grey;float: left;font-size: 0.9em;font-family: font("medium");margin-top: 1px;}
+
+.dashboardPageHeaderActions{width: 45%;float: left;display: flex;justify-content: flex-end;gap: 12px;}
+
+.dashboardPageStats{width: $full-width;float: left;padding: 30px;display: flex;flex-direction: row;gap: 30px;}
+.dashboardPageStatSingle{width: 25%;float: left;}
+.dashboardHomeStats{width: $full-width;float: left;display: flex;flex-direction: column;justify-content: center;align-items: center;}
+.dashboardHomeStatsNumberLable{width: $full-width;float: left;}
+.dashboardHomeStatsNumber{width: $full-width;float: left;}
+.dashboardHomeStatsNumberTxt{width: $full-width;float: left;text-align: center;font-family: font("bold");font-size: 4em;}
+.dashboardHomeStatsNumberTxt.blue{color: $dashboard-sky-blue;}
+.dashboardHomeStatsNumberTxt.red{color: $dashboard-red;}
+.dashboardHomeStatsNumberTxt.yellow{color: $dashboard-yellow;}
+.dashboardHomeStatsNumberTxt.green{color: $dashboard-green;}
+.dashboardHomeStatsLable{width: $full-width;float: left;}
+.dashboardHomeStatsLableTxt{width: $full-width;float: left;text-align: center;text-transform: capitalize;font-family: font("semibold");}
+.dashboardHomeStatsLableTxt.blue{color: $dashboard-sky-blue-dark;}
+.dashboardHomeStatsLableTxt.red{color: $dashboard-red-dark;}
+.dashboardHomeStatsLableTxt.yellow{color: $dashboard-yellow-dark;}
+.dashboardHomeStatsLableTxt.green{color: $dashboard-green-dark;}
+.dashboardHomeStatsSecondaryStats{width: $full-width;float: left;margin-top: 25px;display: flex;justify-content: center;padding-bottom: 25px;}
+.dashboardHomeStatsSecondaryStatsContent{float: left;}
+.dashboardHomeStatsSecondaryStatLable{float: left;font-size: 0.9em;text-transform: capitalize;color: $dashboard-grey;font-family: font("medium");}
+.dashboardHomeStatsSecondaryStatCount{float: left;font-size: 0.9em;text-transform: capitalize;color: $dashboard-grey;font-family: font("semibold");margin-left: 5px;}
+
+.dashboardBasicRequestListItem{width: $full-width;float: left;position: relative;padding: 15px 25px;border-bottom: 1px solid $dashboard-border-bg;cursor: pointer;}
+.dashboardBasicRequestListItem:last-child{border: 0px;}
+.dashboardBasicRequestListItem.hasAction{padding-right: 55px;}
+.dashboardBasicRequestListItem:hover{background-color: $dashboard-border-bg;}
+.dashboardBasicRequestListItemContent{width: $full-width;float: left;}
+.dashboardBasicRequestListItemHeading{width: $full-width;float: left;}
+.dashboardBasicRequestListItemHeadingTxt{width: $full-width;float: left;@include listHeading();}
+.dashboardBasicRequestListItemInfo{width: $full-width;float: left;display: flex;align-items: center;flex-direction: row;gap: 30px;margin-top: 10px;}
+.dashboardBasicRequestListItemInfoStep{float: left;display: flex;flex-direction: row;gap: 10px;align-items: center;}
+.dashboardBasicRequestListItemInfoStepIcon{float: left;}
+.dashboardBasicRequestListItemInfoStepIco{float: left;@include listIcon();}
+.dashboardBasicRequestListItemInfoStepLable{float: left;}
+.dashboardBasicRequestListItemInfoStepLableTxt{float: left;@include listDescription();}
+.dashboardBasicRequestListItemAction{width: 30px;float: left;position: absolute;right: 25px;top: 0px;height: $full-width;display: flex;align-items: center;justify-content: flex-end;}
+.dashboardBasicRequestListItemActionIcon{float: left;}
+.dashboardBasicRequestListItemActionIco{float: left;@include listActionIcon();}
+
+.dashboardBasicActivitiesList{width: $full-width;float: left;position: relative;padding-left: 50px;}
+.dashboardBasicActivitiesTimeline{width: 40px;height: $full-width;float: left;position: absolute;left: 0px;top: 0px;display: flex;justify-content: center;}
+.dashboardBasicActivitiesTimelineLine{width: 2px;height: $full-width;float: left;background-color: $border_grey;}
+.dashboardBasicActivitiesListMain{width: $full-width;float: left;padding-left: 5px;display: flex;flex-direction: column;gap: 25px;}
+.dashboardBasicActivitiesListItem{width: $full-width;float: left;position: relative;min-height: 50px;}
+.dashboardBasicActivitiesListItemTimeline{width: 50px;height: 50px;float: left;position: absolute;left: -60px;top: 0px;background-color: $blue-primary;border: 5px solid $white;z-index: 99;border-radius: 50%;overflow: hidden;@include flexCenter();}
+.dashboardBasicActivitiesListItemTimelineInner{float: left;}
+.dashboardBasicActivitiesListItemTimelineIcon{float: left;}
+.dashboardBasicActivitiesListItemTimelineIco{color: $white;font-size: 1.2em;float: left;}
+.dashboardBasicActivitiesListItemInfo{width: $full-width;float: left;display: flex;align-items: center;min-height: 50px;}
+.dashboardBasicActivitiesListItemInfoInner{width: $full-width;float: left;}
+.dashboardBasicActivitiesListItemInfoHeading{width: $full-width;float: left;}
+.dashboardBasicActivitiesListItemInfoHeadingTxt{width: $full-width;float: left;@include singleLine();display: flex;flex-direction: row;gap: 6px;}
+.dashboardBasicActivitiesListItemInfoHeadingTxtBold{float: left;@include activityHeadingBold();}
+.dashboardBasicActivitiesListItemInfoHeadingTxtNormal{float: left;@include activityHeadingRegular();}
+.dashboardBasicActivitiesListItemInfoContent{width: $full-width;float: left;display: flex;flex-direction: row;gap: 20px;margin-top: 8px;align-items: center;}
+.dashboardBasicActivitiesListItemInfoDateTime{float: left;}
+.dashboardBasicActivitiesListItemInfoDateTimeTxt{float: left;@include activityListTime();}
+.dashboardBasicActivitiesListItemInfoSeperator{width: 4px;height: 4px;float: left;}
+.dashboardBasicActivitiesListItemInfoSeperatorInner{float: left;width: $full-width;height: $full-width;float: left;border-radius: 50%;background-color: $blue-primary;overflow: hidden;}
+.dashboardBasicActivitiesListItemInfoLink{float: left;}
+.dashboardBasicActivitiesListItemInfoLinkTxt{float: left;@include listLink()}
+.dashboardBasicActivitiesListItemInfoLinkTxt:hover{@include listLinkHover()}
+
+.addUserFormPreviewContainer{width: $full-width;float: left;display: flex;flex-direction: row;}
+.addUserFormContainer{padding-right: 30px;border-right: 2px solid $dashboard-bordered-card-border;}
+.addUserPreviewContainer{width: 40%;min-width: 350px;float: left;display: flex;align-items: center;padding-left: 25px;}
+.addUserPreviewMain{width: $full-width;float: left;display: flex;flex-direction: column;gap: 15px;}
+.addUserPreviewVisual{width: $full-width;float: left;display: flex;justify-content: center;}
+.addUserPreviewVisualMain{width: 175px;height: 175px;float: left;}
+.addUserPreviewVisualBubble{width: $full-width;height: $full-width;float: left;position: relative;border: 3px solid $page_bg;border-radius: 50%;overflow: hidden;}
+.addUserPreviewVisualBubbleImageContainer{width: $full-width;height: $full-width;float: left;}
+.addUserPreviewVisualBubbleImage{width: $full-width;height: $full-width;float: left;}
+.addUserPreviewVisualBubbleEdit{position: absolute;bottom: 0px;left: 0px;width: $full-width;}
+.addUserPreviewVisualBubbleEditDefault{float: left;width: $full-width;display: flex;justify-content: center;background: rgba(0, 0, 0, 0.55);padding: 7px 0px 6px;}
+.addUserPreviewVisualBubbleEditDefault:hover{background: rgba(79, 70, 229, 0.9);cursor: pointer;@include bgColorHoverAnim();}
+.addUserPreviewVisualBubbleEditDefaultTxt{color: $white;text-transform: uppercase;}
+.addUserPreviewVisualBubbleEditSave{float: left;width: $full-width;display: flex;justify-content: center;background: rgba(79, 70, 229, 0.7);padding: 7px 0px 6px;}
+.addUserPreviewVisualBubbleEditSave:hover{background: rgba(79, 70, 229, 1);cursor: pointer;@include bgColorHoverAnim();}
+.addUserPreviewVisualBubbleEditSaveTxt{color: $white;text-transform: uppercase;}
+
+.selectAvatarSection{width: 325px;float: left;display: flex;flex-direction: column;align-items: center;position: relative;}
+.selectAvatarSectionArrow{width: $full-width;float: left;display: flex;justify-content: center;position: absolute;top: -15px;left: 0px;}
+.selectAvatarSectionArrowMain{float: left;font-size: 1.4em;rotate: (-90deg);color: $page_bg;}
+.selectAvatarSectionList{width: $full-width;float: left;display: flex;flex-direction: row;flex-wrap: wrap;gap: 3px;background-color: $page_bg;border: 3px solid $page_bg;border-radius: 20px;overflow: hidden;}
+.selectAvatarSectionListItem{width: 104.3px;height: 104.3px;float: left;background-color: $white;}
+.selectAvatarSectionListItemImage{width: $full-width;height: $full-width;float: left;position: relative;}
+.selectAvatarSectionListItemImg{width: $full-width;height: $full-width;float: left;}
+.selectedAvatarItem{width: $full-width;height: $full-width;float: left;position: absolute;top: 0px;left: 0px;background-color: rgba(79, 70, 229, 0);display: flex;justify-content: center;align-items: center;cursor: pointer;}
+.selectedAvatarItem:hover{background-color: rgba(79, 70, 229, 0.85);@include bgColorHoverAnim();}
+.selectedAvatarItem:hover .selectedAvatarIcon{opacity: 1;@include opacityColorHoverAnim();}
+.selectedAvatarIcon{float: left;opacity: 0;}
+.selectedAvatarItem.selected{background-color: rgba(79, 70, 229, 0.85);}
+.selectedAvatarItem.selected .selectedAvatarIcon{opacity: 1;}
+.selectedAvatarIco{color: #fff;font-size: 2em;float: left;}
+
+.addUserPreviewContent{width: $full-width;float: left;}
+.addUserPreviewContent.hasMargin{margin-top: 0px;}
+.addUserPreviewContentNameRole{width: $full-width;float: left;display: flex;align-items: center;flex-direction: column;}
+.addUserPreviewContentName{float: left;}
+.addUserPreviewContentNameTxt{float: left;text-align: center;font-size: 1.2em;font-family: font("semibold");text-transform: capitalize;color: $blue-primary;}
+.addUserPreviewContentRole{float: left;}
+.addUserPreviewContentRoleTxt{color: $dashboard-grey;float: left;font-size: 0.9em;font-family: font("regular");margin-top: 2px;}
+.addUserPreviewContentEmailPhone{width: $full-width;float: left;display: flex;align-items: center;flex-direction: column;margin-top: 10px;}
+.addUserPreviewContentEmail{float: left;}
+.addUserPreviewContentEmailTxt{color: $dashboard-grey;float: left;font-size: 1em;font-family: font("regular");}
+.addUserPreviewContentPhone{float: left;}
+.addUserPreviewContentPhoneTxt{color: $dashboard-grey;float: left;font-size: 1em;font-family: font("regular");margin-top: 4px;}

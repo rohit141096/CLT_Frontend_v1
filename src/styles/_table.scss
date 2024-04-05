@@ -1,0 +1,286 @@
+.cmsDashboardTableContainer{width: $full-width;float: left;overflow-x: auto;}
+.cmsDashboardTable{min-width: $full-width;float: left;display: flex;flex-direction: column;}
+.cmsDashboardTableHeading{width: $full-width;float: left;display: flex;flex-direction: row;padding: 0px 25px;}
+.cmsDashboardTableHeadingItem{min-height: 50px;display: flex;align-items: center;}
+.cmsDashboardTableHeadingItem.col-0{min-width: 50px;flex: 1;}
+.cmsDashboardTableHeadingItem.col-1{min-width: 70px;flex: 2;}
+.cmsDashboardTableHeadingItem.col-2 {min-width: 110px;flex: 3;}
+.cmsDashboardTableHeadingItem.col-3 {min-width: 150px;flex: 4;}
+.cmsDashboardTableHeadingItem.col-4 {min-width: 230px;flex: 5;}
+.cmsDashboardTableHeadingItem.col-5 {min-width: 320px;flex: 6;}
+.cmsDashboardTableHeadingItem.col-6 {min-width: 450px;flex: 7;}
+.cmsDashboardTableHeadingTxt{padding: 0px 15px;text-transform: capitalize;color: $dashboard-grey;font-family: font("medium");font-size: 0.85em;}
+.cmsDashboardTableHeadingItemIco{float: left;color: $dashboard-grey;}
+.cmsDashboardTableRows{width: $full-width;float: left;border-top: 2px solid $dashboard-border-bg;}
+.cmsDashboardTableRow{width: $full-width;min-height: 50px;float: left;z-index: 9;display: flex;flex-direction: row;background: $white;border-bottom: 1px solid $dashboard-border-bg;padding: 10px 25px;}
+.cmsDashboardTableRow:last-child {border-bottom: 0px;}
+// .cmsDashboardTableRowItem{overflow: hidden;}
+.cmsDashboardTableRowItem.col-0{min-width: 50px;flex: 1;}
+.cmsDashboardTableRowItem.col-1{min-width: 70px;flex: 2;}
+.cmsDashboardTableRowItem.col-2{min-width: 110px;flex: 3;}
+.cmsDashboardTableRowItem.col-3{min-width: 150px;flex: 4;}
+.cmsDashboardTableRowItem.col-4{min-width: 230px;flex: 5;}
+.cmsDashboardTableRowItem.col-5{min-width: 320px;flex: 6;}
+.cmsDashboardTableRowItem.col-6 {min-width: 450px;flex: 7;}
+.cmsDashboardTableRowItemInner{width: $full-width;float: left;}
+.cmsDashboardTableRowItemContent{width: $full-width;float: left;align-items: center;position: relative;display: flex;}
+.cmsDashboardTableRowItemContent.hasPreview{padding-left: 75px;height: 60px;}
+.cmsDashboardTableRowItemPreview{width: 60px;height: 60px;float: left;background-color: $dashboard-border-bg;border-radius: 5px;overflow: hidden;padding: 5px;position: absolute;left: 15px;top: 0px;}
+.cmsDashboardTableRowItemPreviewInner{width: $full-width;height: $full-width;float: left;@include flexCenter();}
+.cmsDashboardTableRowItemPreviewImage{max-width: $full-width;max-height: $full-width;float: left;overflow: hidden;}
+.cmsDashboardTableRowItemPreviewImg{max-width: $full-width;max-height: $full-width;float: left;}
+.cmsDashboardTableRowItemPreviewIcon{float: left;}
+.cmsDashboardTableRowItemPreviewIco{float: left;font-size: 1.7em;color: $disabledTxt;}
+.cmsDashboardTableRowIcons{float: left;@include flexCenter();gap: 15px;}
+.cmsDashboardTableRowIconSingle{float: left;}
+.cmsDashboardTableRowIconSingleIco{float: left;cursor: pointer;font-size: 1.2em;}
+.cmsDashboardTableRowIconSingleIco.dark{color: $blue-primary;}
+.cmsDashboardTableRowIconSingleIco.light{color: $bubble-primary;}
+.cmsDashboardTableRowItemActions{width: $full-width;float: left;display: flex;align-items: center;flex-direction: row;gap: 10px;padding-left: 15px;}
+.cmsDashboardTableRowItemLable{float: left;max-width: $full-width;padding: 0px 15px;}
+.cmsDashboardTableRowItemLableTxt{max-width: $full-width;float: left;color: $blue-primary;font-family: font("medium");font-size: 0.95em;text-transform: capitalize;@include singleLine();}
+
+
+
+.cmsDashboardTableButton{float: left;position: relative;height: 35px;cursor: pointer;overflow: hidden;z-index: 1;font-size: 0.85em !important;}
+.cmsDashboardTableButtonLable{font-size: 1.05em;font-family: font("medium");text-transform: capitalize;margin-top: -1px;float: left;}
+
+.cmsDashboardTableButton.fill.clickDisabled::before{display: none;}
+.cmsDashboardTableButton.fill.clickDisabled:hover{cursor: not-allowed;}
+.cmsDashboardTableButton.fill:disabled:hover{cursor: not-allowed;}
+.cmsDashboardTableButton.fill:disabled::before {transition-duration: 800ms; position: absolute; width: 200%; height: 200%; content: ""; top: 110%; left: 50%; background-color: $disabledBg !important; -webkit-transform: translateX(-50%); transform: translateX(-50%); border-radius: 50%; z-index: -1;}
+.cmsDashboardTableButton.fill:disabled:hover:before { top: -40%;}
+.cmsDashboardTableButton.fill:disabled:hover { color: $disabledTxt; }
+
+.cmsDashboardTableButton.fill.dashboard{background-color: $bubble-primary;color: $white;}
+.cmsDashboardTableButton.fill.dashboard::before {transition-duration: 800ms; position: absolute; width: 200%; height: 200%; content: ""; top: 110%; left: 50%; background-color: $bubble-primary-dark; -webkit-transform: translateX(-50%); transform: translateX(-50%); border-radius: 50%; z-index: -1;}
+.cmsDashboardTableButton.fill.dashboard:hover:before { top: -40%;}
+.cmsDashboardTableButton.fill.dashboard:hover { color: $white; }
+
+.cmsDashboardTableButton.fill.primary{background-color: $blue-light;color: $white;}
+.cmsDashboardTableButton.fill.primary::before {transition-duration: 800ms; position: absolute; width: 200%; height: 200%; content: ""; top: 110%; left: 50%; background-color: $black; -webkit-transform: translateX(-50%); transform: translateX(-50%); border-radius: 50%; z-index: -1;}
+.cmsDashboardTableButton.fill.primary:hover:before { top: -40%;}
+.cmsDashboardTableButton.fill.primary:hover { color: $white; }
+
+.cmsDashboardTableButton.fill.error{background-color: $text-error;color: $white;}
+.cmsDashboardTableButton.fill.error::before {transition-duration: 800ms; position: absolute; width: 200%; height: 200%; content: ""; top: 110%; left: 50%; background-color: $text-error-hover; -webkit-transform: translateX(-50%); transform: translateX(-50%); border-radius: 50%; z-index: -1;}
+.cmsDashboardTableButton.fill.error:hover:before { top: -40%;}
+.cmsDashboardTableButton.fill.error:hover { color: $white; }
+
+.cmsDashboardTableButton.fill.warning{background-color: $text-warning;color: $white;}
+.cmsDashboardTableButton.fill.warning::before {transition-duration: 800ms; position: absolute; width: 200%; height: 200%; content: ""; top: 110%; left: 50%; background-color: $text-warning-hover; -webkit-transform: translateX(-50%); transform: translateX(-50%); border-radius: 50%; z-index: -1;}
+.cmsDashboardTableButton.fill.warning:hover:before { top: -40%;}
+.cmsDashboardTableButton.fill.warning:hover { color: $white; }
+
+.cmsDashboardTableButton.fill.success{background-color: $text-success;color: $white;}
+.cmsDashboardTableButton.fill.success::before {transition-duration: 800ms; position: absolute; width: 200%; height: 200%; content: ""; top: 110%; left: 50%; background-color: $text-success-hover; -webkit-transform: translateX(-50%); transform: translateX(-50%); border-radius: 50%; z-index: -1;}
+.cmsDashboardTableButton.fill.success:hover:before { top: -40%;}
+.cmsDashboardTableButton.fill.success:hover { color: $white; }
+
+.cmsDashboardTableButton.fill.white{background-color: $white;color: $blue-primary;}
+.cmsDashboardTableButton.fill.white::before {transition-duration: 800ms; position: absolute; width: 200%; height: 200%; content: ""; top: 110%; left: 50%; background-color: $disabledBg; -webkit-transform: translateX(-50%); transform: translateX(-50%); border-radius: 50%; z-index: -1;}
+.cmsDashboardTableButton.fill.white:hover:before { top: -40%;}
+.cmsDashboardTableButton.fill.white:hover { color: $disabledTxt; }
+
+.cmsDashboardTableButton.fullWidth{width: $full-width;@include flexCenter();}
+.cmsDashboardTableButton.autoWidth{width: auto;padding: 0px 20px;}
+.cmsDashboardTableButton.halfWidth{width: 50%;}
+
+.cmsDashboardTableButton.shortBr{border-radius: 7px;}
+.cmsDashboardTableButton.fullBr{border-radius: 22px;}
+.cmsDashboardTableButton.noBr{border-radius: 0px;}
+
+.cmsDashboardTableButton.hasIcon.icoRight{padding-right: 45px;padding-left: 20px;}
+.cmsDashboardTableButton.hasIcon.icoLeft{padding-left: 45px;padding-right: 20px;}
+
+.cmsDashboardTableButton.hasIcon.fullWidth{padding: 0px;}
+.cmsDashboardTableButton.hasIcon.icoRight .cmsDashboardTableButtonIcon{position: absolute;right: 0px;top: 0px;height: $full-width;display: flex;align-items: center;justify-content: left;width: 38px;}
+.cmsDashboardTableButton.hasIcon.icoLeft .cmsDashboardTableButtonIcon{position: absolute;left: 0px;top: 0px;height: $full-width;display: flex;align-items: center;justify-content: right;width: 33px;}
+
+.cmsDashboardTableButton:disabled{background-color: $disabledBg !important;color: $disabledTxt !important;}
+.cmsDashboardTableButton.clickDisabled{cursor: not-allowed !important;}
+
+.cmsDashboardTableButtonIco{float: left;font-size: 1.2em;color: $white;}
+.cmsDashboardTableButtonIco.shortHight .cmsDashboardIconButtonIco{font-size: 1em;}
+.cmsDashboardTableButtonIco.dashboard{color: $white;}
+.cmsDashboardTableButtonIco.primary{color: $white;}
+.cmsDashboardTableButtonIco.error{color: $white;}
+.cmsDashboardTableButtonIco.warning{color: $white;}
+.cmsDashboardTableButtonIco.success{color: $white;}
+.cmsDashboardTableButtonIco.white{color: $blue-primary;}
+.cmsDashboardTableButtonIco.clickable{cursor: pointer;}
+
+
+
+
+
+.cmsDashboardTableIcoButton{float: left;position: relative;width: 35px;height: 35px;cursor: pointer;overflow: hidden;z-index: 1;font-size: 0.85em !important;}
+.cmsDashboardTableIcoButtonLable{font-size: 1.05em;font-family: font("medium");text-transform: capitalize;margin-top: -1px;float: left;}
+
+.cmsDashboardTableIcoButton.fill:disabled:hover{cursor: not-allowed;}
+.cmsDashboardTableIcoButton.fill:disabled::before {transition-duration: 800ms; position: absolute; width: 200%; height: 200%; content: ""; top: 110%; left: 50%; background-color: $disabledBg !important; -webkit-transform: translateX(-50%); transform: translateX(-50%); border-radius: 50%; z-index: -1;}
+.cmsDashboardTableIcoButton.fill:disabled:hover:before { top: -40%;}
+.cmsDashboardTableIcoButton.fill:disabled:hover { color: $disabledTxt; }
+
+.cmsDashboardTableIcoButton.fill.dashboard{background-color: $bubble-primary;color: $white;}
+.cmsDashboardTableIcoButton.fill.dashboard::before {transition-duration: 800ms; position: absolute; width: 200%; height: 200%; content: ""; top: 110%; left: 50%; background-color: $bubble-primary-dark; -webkit-transform: translateX(-50%); transform: translateX(-50%); border-radius: 50%; z-index: -1;}
+.cmsDashboardTableIcoButton.fill.dashboard:hover:before { top: -40%;}
+.cmsDashboardTableIcoButton.fill.dashboard:hover { color: $white; }
+
+.cmsDashboardTableIcoButton.fill.primary{background-color: $blue-light;color: $white;}
+.cmsDashboardTableIcoButton.fill.primary::before {transition-duration: 800ms; position: absolute; width: 200%; height: 200%; content: ""; top: 110%; left: 50%; background-color: $black; -webkit-transform: translateX(-50%); transform: translateX(-50%); border-radius: 50%; z-index: -1;}
+.cmsDashboardTableIcoButton.fill.primary:hover:before { top: -40%;}
+.cmsDashboardTableIcoButton.fill.primary:hover { color: $white; }
+
+.cmsDashboardTableIcoButton.fill.error{background-color: $text-error;color: $white;}
+.cmsDashboardTableIcoButton.fill.error::before {transition-duration: 800ms; position: absolute; width: 200%; height: 200%; content: ""; top: 110%; left: 50%; background-color: $text-error-hover; -webkit-transform: translateX(-50%); transform: translateX(-50%); border-radius: 50%; z-index: -1;}
+.cmsDashboardTableIcoButton.fill.error:hover:before { top: -40%;}
+.cmsDashboardTableIcoButton.fill.error:hover { color: $white; }
+
+.cmsDashboardTableIcoButton.fill.warning{background-color: $text-warning;color: $white;}
+.cmsDashboardTableIcoButton.fill.warning::before {transition-duration: 800ms; position: absolute; width: 200%; height: 200%; content: ""; top: 110%; left: 50%; background-color: $text-warning-hover; -webkit-transform: translateX(-50%); transform: translateX(-50%); border-radius: 50%; z-index: -1;}
+.cmsDashboardTableIcoButton.fill.warning:hover:before { top: -40%;}
+.cmsDashboardTableIcoButton.fill.warning:hover { color: $white; }
+
+.cmsDashboardTableIcoButton.fill.success{background-color: $text-success;color: $white;}
+.cmsDashboardTableIcoButton.fill.success::before {transition-duration: 800ms; position: absolute; width: 200%; height: 200%; content: ""; top: 110%; left: 50%; background-color: $text-success-hover; -webkit-transform: translateX(-50%); transform: translateX(-50%); border-radius: 50%; z-index: -1;}
+.cmsDashboardTableIcoButton.fill.success:hover:before { top: -40%;}
+.cmsDashboardTableIcoButton.fill.success:hover { color: $white; }
+
+.cmsDashboardTableIcoButton.fill.white{background-color: $white;color: $blue-primary;}
+.cmsDashboardTableIcoButton.fill.white::before {transition-duration: 800ms; position: absolute; width: 200%; height: 200%; content: ""; top: 110%; left: 50%; background-color: $disabledBg; -webkit-transform: translateX(-50%); transform: translateX(-50%); border-radius: 50%; z-index: -1;}
+.cmsDashboardTableIcoButton.fill.white:hover:before { top: -40%;}
+.cmsDashboardTableIcoButton.fill.white:hover { color: $disabledTxt; }
+
+.cmsDashboardTableIcoButton.fullWidth{width: $full-width;@include flexCenter();}
+.cmsDashboardTableIcoButton.autoWidth{width: auto;padding: 0px 20px;}
+.cmsDashboardTableIcoButton.halfWidth{width: 50%;}
+
+.cmsDashboardTableIcoButton.shortBr{border-radius: 7px;}
+.cmsDashboardTableIcoButton.fullBr{border-radius: 22px;}
+.cmsDashboardTableIcoButton.noBr{border-radius: 0px;}
+
+// .cmsDashboardTableIcoButton.hasIcon.icoRight{padding-right: 45px;}
+// .cmsDashboardTableIcoButton.hasIcon.icoLeft{padding-left: 45px;}
+
+.cmsDashboardTableIcoButton.hasIcon.fullWidth{padding: 0px;}
+.cmsDashboardTableIcoButtonIcon{width: $full-width;height: $full-width;float: left;@include flexCenter();}
+
+.cmsDashboardTableIcoButton:disabled{background-color: $disabledBg !important;color: $disabledTxt !important;}
+
+.cmsDashboardTableIcoButtonIco{float: left;font-size: 1.2em;color: $white;}
+.cmsDashboardTableIcoButtonIco.shortHight .cmsDashboardIconButtonIco{font-size: 1em;}
+.cmsDashboardTableIcoButtonIco.dashboard{color: $white;}
+.cmsDashboardTableIcoButtonIco.primary{color: $white;}
+.cmsDashboardTableIcoButtonIco.error{color: $white;}
+.cmsDashboardTableIcoButtonIco.warning{color: $white;}
+.cmsDashboardTableIcoButtonIco.success{color: $white;}
+.cmsDashboardTableIcoButtonIco.white{color: $blue-primary;}
+.cmsDashboardTableIcoButtonIco.clickable{cursor: pointer;}
+
+
+.cmsDashboardTableCheckbox {position: relative;height: 24px;}
+.cmsDashboardTableCheckbox input[type="checkbox"] {display: none;visibility: hidden;}
+.cmsDashboardTableCheckbox .cbx {-webkit-perspective: 20;perspective: 20;display: inline-block;border: 2px solid $dashboard-grey;background: $dashboard-grey;border-radius: 4px;transform: translate3d(0, 0, 0);cursor: pointer;transition: all 0.3s ease;}
+.cmsDashboardTableCheckbox .cbx:hover {border-color: $bubble-primary;}
+.cmsDashboardTableCheckbox .flip {display: block;transition: all 0.4s ease;transform-style: preserve-3d;position: relative;width: 20px;height: 20px;}
+.cmsDashboardTableCheckbox input[type="checkbox"]:checked + .cbx {border-color: $bubble-primary;}
+.cmsDashboardTableCheckbox input[type="checkbox"]:checked + .cbx .flip {transform: rotateY(180deg);}
+.cmsDashboardTableCheckbox .front,.cmsDashboardTableCheckbox .back {backface-visibility: hidden;position: absolute;top: 0;left: 0;width: 20px;height: 20px;border-radius: 2px;}
+.cmsDashboardTableCheckbox .front {background: $white;z-index: 1;}
+.cmsDashboardTableCheckbox .back {transform: rotateY(180deg);background: $bubble-primary;text-align: center;color: $white;line-height: 20px;box-shadow: 0 0 0 1px $bubble-primary;}
+.cmsDashboardTableCheckbox .back svg {margin-top: 3px;fill: none;}
+.cmsDashboardTableCheckbox .back svg path {stroke: $white;stroke-width: 2.5;stroke-linecap: round;stroke-linejoin: round;}
+
+.cmsDashboardTableRowErrorPlain{float: left;}
+.cmsDashboardTableRowErrorPlainTxt{float: left;color: $text-error;font-family: font("medium");font-size: 0.95em;text-transform: capitalize;cursor: pointer;text-decoration: underline;}
+.cmsDashboardTableRowErrorPlainTxt:hover{color: $text-error-hover;}
+
+
+// pagination starts
+
+.cmsDashboardTablePagination {
+    width: $full-width;
+    padding-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .cmsDashboardTablePaginationInner {
+    float: right;
+  }
+  .cmsDashboardTablePaginationAction {
+    float: left;
+    margin-right: 15px;
+  }
+  .cmsDashboardTablePaginationActionTxt:hover,
+  .active > .cmsDashboardTablePaginationActionTxt {
+    background: $bubble-primary-dark;
+  }
+  .cmsDashboardTablePaginationAction:last-child {
+    margin: 0px;
+  }
+  .cmsDashboardTablePaginationActionTxt {
+    width: $full-width;
+    padding: 0px 20px;
+    height: 30px;
+    float: left;
+    font-family: font("medium");
+    font-size: 0.85em;
+    text-align: center;
+    background: $bubble-primary;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: $white;
+    border-radius: 5px;
+  }
+  .cmsDashboardTablePaginationPages {
+    float: left;
+    margin: 0px 15px 0px 0px;
+  }
+  .cmsDashboardTablePaginationPageSingle {
+    float: left;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid $bubble-primary;
+    margin-right: 15px;
+    border-radius: 5px;
+  }
+  .cmsDashboardTablePaginationPageSingle:last-child {
+    margin: 0px;
+  }
+  .cmsDashboardTablePaginationPageSingle:hover {
+    background: $bubble-primary;
+    cursor: pointer;
+  }
+  
+  .cmsDashboardTablePaginationPageSingle.active {
+    background: $bubble-primary;
+    cursor: pointer;
+  }
+  
+  .cmsDashboardTablePaginationPageSingle:hover
+    .cmsDashboardTablePaginationPageSingleTxt {
+    color: $white;
+  }
+  
+  .cmsDashboardTablePaginationPageSingle.active
+    .cmsDashboardTablePaginationPageSingleTxt {
+    color: $white;
+  }
+  
+  .cmsDashboardTablePaginationPageSingleTxt {
+    width: 100%;
+    float: left;
+    font-family: font("semibold");
+    font-size: 0.85em;
+    text-align: center;
+    text-transform: uppercase;
+    color: $bubble-primary;
+  }
+
+  // pagination ends

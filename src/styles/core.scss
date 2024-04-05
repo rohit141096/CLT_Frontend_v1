@@ -1,0 +1,284 @@
+/* 
+
+    Card Style Starts 
+
+*/
+
+// Bordered Card
+
+.cmsCoreBorderedCard{width: $full-width;float: left;position: relative;}
+.cmsCoreBorderedCard.hasPadding{padding: 15px;}
+.cmsCoreBorderedCard.curved{border-radius: 10px;}
+.cmsCoreBorderedCard.grey{border: 1px solid $border_grey;}
+.cmsCoreBorderedCard.primary{border: 1px solid $blue-primary;}
+.cmsCoreBorderedCard.success{border: 1px solid $text-success;}
+.cmsCoreBorderedCard.error{border: 1px solid $text-error;}
+.cmsCoreBorderedCard.warning{border: 1px solid $text-warning;}
+.cmsCoreBorderedCard.dark{border: 1px solid $black;}
+.cmsCoreBorderedCard.light{border: 1px solid $white;}
+
+.cmsDashboardButton{float: left;position: relative;height: 40px;cursor: pointer;overflow: hidden;z-index: 1;}
+.cmsDashboardButton.shortHight{height: 35px !important;font-size: 0.85em !important;}
+.cmsDashboardButtonLable{font-size: 1.05em;font-family: font("medium");text-transform: capitalize;margin-top: -1px;float: left;}
+
+.cmsDashboardButton.fill:disabled:hover{cursor: not-allowed;}
+.cmsDashboardButton.fill:disabled::before {transition-duration: 800ms; position: absolute; width: 200%; height: 200%; content: ""; top: 110%; left: 50%; background-color: $disabledBg !important; -webkit-transform: translateX(-50%); transform: translateX(-50%); border-radius: 50%; z-index: -1;}
+.cmsDashboardButton.fill:disabled:hover:before { top: -40%;}
+.cmsDashboardButton.fill:disabled:hover { color: $disabledTxt; }
+
+.cmsDashboardButton.fill.dashboard{background-color: $bubble-primary;color: $white;}
+.cmsDashboardButton.fill.dashboard::before {transition-duration: 800ms; position: absolute; width: 200%; height: 200%; content: ""; top: 110%; left: 50%; background-color: $bubble-primary-dark; -webkit-transform: translateX(-50%); transform: translateX(-50%); border-radius: 50%; z-index: -1;}
+.cmsDashboardButton.fill.dashboard:hover:before { top: -40%;}
+.cmsDashboardButton.fill.dashboard:hover { color: $white; }
+
+.cmsDashboardButton.fill.primary{background-color: $blue-light;color: $white;}
+.cmsDashboardButton.fill.primary::before {transition-duration: 800ms; position: absolute; width: 200%; height: 200%; content: ""; top: 110%; left: 50%; background-color: $black; -webkit-transform: translateX(-50%); transform: translateX(-50%); border-radius: 50%; z-index: -1;}
+.cmsDashboardButton.fill.primary:hover:before { top: -40%;}
+.cmsDashboardButton.fill.primary:hover { color: $white; }
+
+.cmsDashboardButton.fill.error{background-color: $text-error;color: $white;}
+.cmsDashboardButton.fill.error::before {transition-duration: 800ms; position: absolute; width: 200%; height: 200%; content: ""; top: 110%; left: 50%; background-color: $text-error-hover; -webkit-transform: translateX(-50%); transform: translateX(-50%); border-radius: 50%; z-index: -1;}
+.cmsDashboardButton.fill.error:hover:before { top: -40%;}
+.cmsDashboardButton.fill.error:hover { color: $white; }
+
+.cmsDashboardButton.fill.warning{background-color: $text-warning;color: $white;}
+.cmsDashboardButton.fill.warning::before {transition-duration: 800ms; position: absolute; width: 200%; height: 200%; content: ""; top: 110%; left: 50%; background-color: $text-warning-hover; -webkit-transform: translateX(-50%); transform: translateX(-50%); border-radius: 50%; z-index: -1;}
+.cmsDashboardButton.fill.warning:hover:before { top: -40%;}
+.cmsDashboardButton.fill.warning:hover { color: $white; }
+
+.cmsDashboardButton.fill.success{background-color: $text-success;color: $white;}
+.cmsDashboardButton.fill.success::before {transition-duration: 800ms; position: absolute; width: 200%; height: 200%; content: ""; top: 110%; left: 50%; background-color: $text-success-hover; -webkit-transform: translateX(-50%); transform: translateX(-50%); border-radius: 50%; z-index: -1;}
+.cmsDashboardButton.fill.success:hover:before { top: -40%;}
+.cmsDashboardButton.fill.success:hover { color: $white; }
+
+.cmsDashboardButton.fill.white{background-color: $white;color: $blue-primary;}
+.cmsDashboardButton.fill.white::before {transition-duration: 800ms; position: absolute; width: 200%; height: 200%; content: ""; top: 110%; left: 50%; background-color: $disabledBg; -webkit-transform: translateX(-50%); transform: translateX(-50%); border-radius: 50%; z-index: -1;}
+.cmsDashboardButton.fill.white:hover:before { top: -40%;}
+.cmsDashboardButton.fill.white:hover { color: $disabledTxt; }
+
+.cmsDashboardButton.bordered.primary{background: none;border: 1px solid $bubble-primary;color: $blue-primary;}
+.cmsDashboardButton.bordered.primary:hover{background: $bubble-primary;border: 1px solid $bubble-primary;color: $white;}
+.cmsDashboardButton.bordered.primary{background: none;border: 1px solid $blue-light;color: $blue-primary;}
+.cmsDashboardButton.bordered.primary:hover{background: $blue-light;border: 1px solid $blue-light;color: $white;}
+.cmsDashboardButton.bordered.error{background: none;border: 1px solid $text-error;color: $text-error;}
+.cmsDashboardButton.bordered.error:hover{background: $text-error;border: 1px solid $text-error;color: $white;}
+.cmsDashboardButton.bordered.warning{background: none;border: 1px solid $text-warning;color: $text-warning;}
+.cmsDashboardButton.bordered.warning:hover{background: $text-warning;border: 1px solid $text-warning;color: $white;}
+.cmsDashboardButton.bordered.success{background: none;border: 1px solid $text-success;color: $text-success;}
+.cmsDashboardButton.bordered.success:hover{background: $text-success;border: 1px solid $text-success;color: $white;}
+.cmsDashboardButton.bordered.white{background: none;border: 1px solid $white;color: $white;}
+.cmsDashboardButton.bordered.white:hover{background: $white;border: 1px solid $white;color: $blue-primary;}
+
+.cmsDashboardButton.underline{padding: 0px !important;height: 30px !important;}
+.cmsDashboardButton.underline.dashboard{background: none;border-bottom: 2px solid $bubble-primary;color: $bubble-primary;}
+.cmsDashboardButton.underline.primary{background: none;border-bottom: 2px solid $blue-light;color: $blue-light;}
+.cmsDashboardButton.underline.error{background: none;border-bottom: 2px solid $text-error;color: $text-error;}
+.cmsDashboardButton.underline.warning{background: none;border-bottom: 2px solid $text-warning;color: $text-warning;}
+.cmsDashboardButton.underline.success{background: none;border-bottom: 2px solid $text-success;color: $text-success;}
+.cmsDashboardButton.underline.white{background: none;border-bottom: 2px solid $white;color: $white;}
+
+.cmsDashboardButton.fullWidth{width: $full-width;@include flexCenter();}
+.cmsDashboardButton.autoWidth{width: auto;padding: 0px 20px;}
+.cmsDashboardButton.halfWidth{width: 50%;}
+
+.cmsDashboardButton.shortBr{border-radius: 7px;}
+.cmsDashboardButton.fullBr{border-radius: 22px;}
+.cmsDashboardButton.noBr{border-radius: 0px;}
+
+.cmsDashboardButton.hasIcon.icoRight{padding-right: 45px;}
+.cmsDashboardButton.hasIcon.icoLeft{padding-left: 45px;}
+
+.cmsDashboardButton.hasIcon.fullWidth{padding: 0px;}
+.cmsDashboardButton.hasIcon.icoRight .cmsDashboardButtonIcon{position: absolute;right: 0px;top: 0px;height: $full-width;display: flex;align-items: center;justify-content: left;width: 38px;}
+.cmsDashboardButton.hasIcon.icoLeft .cmsDashboardButtonIcon{position: absolute;left: 0px;top: 0px;height: $full-width;display: flex;align-items: center;justify-content: right;width: 33px;}
+
+.cmsDashboardButton:disabled{background-color: $disabledBg !important;color: $disabledTxt !important;}
+
+.cmsDashboardButtonIco{float: left;font-size: 1.2em;color: $white;}
+.cmsDashboardButtonIco.shortHight .cmsDashboardIconButtonIco{font-size: 1em;}
+.cmsDashboardButtonIco.dashboard{color: $white;}
+.cmsDashboardButtonIco.primary{color: $white;}
+.cmsDashboardButtonIco.error{color: $white;}
+.cmsDashboardButtonIco.warning{color: $white;}
+.cmsDashboardButtonIco.success{color: $white;}
+.cmsDashboardButtonIco.white{color: $blue-primary;}
+.cmsDashboardButtonIco.clickable{cursor: pointer;}
+
+.cmsDashboardIconButton{float: left;position: relative;height: 44px;width:44px;cursor: pointer;font-size: 1em;overflow: hidden;z-index: 1;display: flex;justify-content: center;align-items: center;}
+.cmsDashboardIconButton.shortHight{height: 35px !important;width: 35px !important;}
+
+.cmsDashboardIconButton.fill:disabled:hover{cursor: not-allowed;}
+.cmsDashboardIconButton.fill:disabled::before {transition-duration: 800ms; position: absolute; width: 200%; height: 200%; content: ""; top: 110%; left: 50%; background-color: $disabledBg !important; -webkit-transform: translateX(-50%); transform: translateX(-50%); border-radius: 50%; z-index: -1;}
+.cmsDashboardIconButton.fill:disabled:hover:before { top: -40%;}
+.cmsDashboardIconButton.fill:disabled:hover { color: $disabledTxt; }
+
+.cmsDashboardIconButton.fill.dashboard{background-color: $bubble-primary;color: $white;}
+.cmsDashboardIconButton.fill.dashboard::before {transition-duration: 800ms; position: absolute; width: 200%; height: 200%; content: ""; top: 110%; left: 50%; background-color: $black; -webkit-transform: translateX(-50%); transform: translateX(-50%); border-radius: 50%; z-index: -1;}
+.cmsDashboardIconButton.fill.dashboard:hover:before { top: -40%;}
+.cmsDashboardIconButton.fill.dashboard:hover { color: $white; }
+
+.cmsDashboardIconButton.fill.primary{background-color: $blue-light;color: $white;}
+.cmsDashboardIconButton.fill.primary::before {transition-duration: 800ms; position: absolute; width: 200%; height: 200%; content: ""; top: 110%; left: 50%; background-color: $black; -webkit-transform: translateX(-50%); transform: translateX(-50%); border-radius: 50%; z-index: -1;}
+.cmsDashboardIconButton.fill.primary:hover:before { top: -40%;}
+.cmsDashboardIconButton.fill.primary:hover { color: $white; }
+
+.cmsDashboardIconButton.fill.error{background-color: $text-error;color: $white;}
+.cmsDashboardIconButton.fill.error::before {transition-duration: 800ms; position: absolute; width: 200%; height: 200%; content: ""; top: 110%; left: 50%; background-color: $text-error-hover; -webkit-transform: translateX(-50%); transform: translateX(-50%); border-radius: 50%; z-index: -1;}
+.cmsDashboardIconButton.fill.error:hover:before { top: -40%;}
+.cmsDashboardIconButton.fill.error:hover { color: $white; }
+
+.cmsDashboardIconButton.fill.warning{background-color: $text-warning;color: $white;}
+.cmsDashboardIconButton.fill.warning::before {transition-duration: 800ms; position: absolute; width: 200%; height: 200%; content: ""; top: 110%; left: 50%; background-color: $text-warning-hover; -webkit-transform: translateX(-50%); transform: translateX(-50%); border-radius: 50%; z-index: -1;}
+.cmsDashboardIconButton.fill.warning:hover:before { top: -40%;}
+.cmsDashboardIconButton.fill.warning:hover { color: $white; }
+
+.cmsDashboardIconButton.fill.success{background-color: $text-success;color: $white;}
+.cmsDashboardIconButton.fill.success::before {transition-duration: 800ms; position: absolute; width: 200%; height: 200%; content: ""; top: 110%; left: 50%; background-color: $text-success-hover; -webkit-transform: translateX(-50%); transform: translateX(-50%); border-radius: 50%; z-index: -1;}
+.cmsDashboardIconButton.fill.success:hover:before { top: -40%;}
+.cmsDashboardIconButton.fill.success:hover { color: $white; }
+
+.cmsDashboardIconButton.fill.white{background-color: $white;color: $blue-primary;}
+.cmsDashboardIconButton.fill.white::before {transition-duration: 800ms; position: absolute; width: 200%; height: 200%; content: ""; top: 110%; left: 50%; background-color: $disabledBg; -webkit-transform: translateX(-50%); transform: translateX(-50%); border-radius: 50%; z-index: -1;}
+.cmsDashboardIconButton.fill.white:hover:before { top: -40%;}
+.cmsDashboardIconButton.fill.white:hover { color: $disabledTxt; }
+
+.cmsDashboardIconButton.bordered.dashboard{background: none;border: 1px solid $bubble-primary;color: $bubble-primary;}
+.cmsDashboardIconButton.bordered.dashboard:hover{background: $bubble-primary;border: 1px solid $bubble-primary;color: $white;}
+.cmsDashboardIconButton.bordered.primary{background: none;border: 1px solid $blue-light;color: $blue-primary;}
+.cmsDashboardIconButton.bordered.primary:hover{background: $blue-light;border: 1px solid $blue-light;color: $white;}
+.cmsDashboardIconButton.bordered.error{background: none;border: 1px solid $text-error;color: $text-error;}
+.cmsDashboardIconButton.bordered.error:hover{background: $text-error;border: 1px solid $text-error;color: $white;}
+.cmsDashboardIconButton.bordered.warning{background: none;border: 1px solid $text-warning;color: $text-warning;}
+.cmsDashboardIconButton.bordered.warning:hover{background: $text-warning;border: 1px solid $text-warning;color: $white;}
+.cmsDashboardIconButton.bordered.success{background: none;border: 1px solid $text-success;color: $text-success;}
+.cmsDashboardIconButton.bordered.success:hover{background: $text-success;border: 1px solid $text-success;color: $white;}
+.cmsDashboardIconButton.bordered.white{background: none;border: 1px solid $white;color: $white;}
+.cmsDashboardIconButton.bordered.white:hover{background: $white;border: 1px solid $white;color: $blue-primary;}
+
+.cmsDashboardIconButton.shortBr{border-radius: 7px;}
+.cmsDashboardIconButton.fullBr{border-radius: 22px;}
+.cmsDashboardIconButton.noBr{border-radius: 0px;}
+
+.cmsDashboardIconButton:disabled{background-color: $disabledBg !important;color: $disabledTxt !important;}
+
+.cmsDashboardIconButtonIco{float: left;font-size: 1.2em;color: $white;}
+.cmsDashboardIconButton.shortHight .cmsDashboardIconButtonIco{font-size: 1em;}
+.cmsDashboardIconButtonIco.dashboard{color: $bubble-primary;}
+.cmsDashboardIconButtonIco.primary{color: $white;}
+.cmsDashboardIconButtonIco.error{color: $white;}
+.cmsDashboardIconButtonIco.warning{color: $white;}
+.cmsDashboardIconButtonIco.success{color: $white;}
+.cmsDashboardIconButtonIco.white{color: $blue-primary;}
+.cmsDashboardIconButtonIco.clickable{cursor: pointer;}
+
+// Dashboard Card Style Starts
+
+.dashboardCard{width: $full-width;float: left;background-color: $white;border-radius: 15px;box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.05);}
+.dashboardCardHeadingAction{width: $full-width;float: left;display: flex;align-items: center;justify-content: space-between;padding: 25px 25px 0px;}
+.dashboardCardHeadings{max-width: 80%;float: left;}
+.dashboardCardHeadingLable{width: $full-width;float: left;}
+.dashboardCardHeadingLableTxt{float: left;font-family: font("semibold");text-transform: capitalize;font-size: 0.95em;}
+.dashboardCardHeadingLableTxt.default{color: $dashboard-grey;}
+.dashboardCardHeadingLableTxt.dark{color: $blue-primary;}
+.dashboardCardDescriptionLable{width: $full-width;float: left;margin-top: 5px;}
+.dashboardCardDescriptionLableTxt{float: left;font-family: font("medium");text-transform: capitalize;font-size: 0.8em;color: $dashboard-grey;}
+
+.dashboardCardAction{float: left;}
+.dashboardCardActionIcon{float: left;}
+.dashboardCardActionIco{color: $dashboard-grey;font-size: 1.2em;float: left;cursor: pointer;}
+.dashboardCardActionIco:hover{color: $blue-primary;}
+.dashboardCardContent{width: $full-width;float: left;margin-top: 10px;}
+.dashboardCardBottomActions{width: $full-width;float: left;margin-top: 15px;display: flex;justify-content: flex-start;padding: 0px 25px 25px;}
+.dashboardCardBottomActionsInner{float: left;display: flex;flex-direction: column;gap: 20px;}
+
+
+.dashboardPlainContainer{float: left;position: relative;}
+.dashboardPlainContainer.fullWidth{width: $full-width;}
+.dashboardPlainContainer.halfWidth{width: 50%;}
+
+.dashboardSplitContainer{float: left;position: relative;display: flex;flex-direction: row;gap: 30px;margin-bottom: 15px;}
+.dashboardSplitContainer.fullWidth{width: $full-width;}
+.dashboardSplitContainer.halfWidth{width: $full-width;}
+
+// Dashboard Search Bar Style Starts
+
+.cmsDashboardHeaderSearchBar{width: 300px;float: left;height: 40px;background-color: $page_bg;border: 1px solid $dashboard-border-bg;border-radius: 20px;position: relative;}
+.cmsDashboardHeaderSearchBarInput{width: $full-width;height: $full-width;float: left;padding: 0px 100px 0px 40px;}
+.cmsDashboardHeaderSearchBarInputTxt{width: $full-width;height: $full-width;float: left;background: none;font-family: font("regular");font-size: 0.9em;}
+.cmsDashboardHeaderSearchBarInputTxt::placeholder {color: $border_grey;opacity: 1; /* Firefox */}
+.cmsDashboardHeaderSearchBarInputTxt::-ms-input-placeholder { /* Edge 12 -18 */color: $border_grey;}
+
+.cmsDashboardHeaderSearchBarMGlassIcon{width: 40px;height: $full-width;float: left;position: absolute;left: 0px;top: 0px;@include flexCenter();}
+.cmsDashboardHeaderSearchBarMGlassIco{float: left;color: $border_grey;font-size: 0.9em;}
+
+.cmsDashboardHeaderSearchBarSubmit{width: 86px;height: $full-width;position: absolute;right: 2px;top: 0px;@include flexCenter();}
+.cmsDashboardHeaderSearchBarSubmitButton{width: $full-width;height: 36px;float: left;background-color: $bubble-dark-transparent;border-radius: 18px;cursor: pointer;position: relative;overflow: hidden;}
+.cmsDashboardHeaderSearchBarSubmitButton::before {transition-duration: 800ms; position: absolute; width: 150%; height: 200%; content: ""; top: 110%; left: 50%; background-color: $black; -webkit-transform: translateX(-50%); transform: translateX(-50%); border-radius: 50%;}
+.cmsDashboardHeaderSearchBarSubmitButton:hover:before { top: -80%;}
+.cmsDashboardHeaderSearchBarSubmitButton:hover { color: $white; }
+.cmsDashboardHeaderSearchBarSubmitButtonTxt{font-size: 1.05em;font-family: font("medium");text-transform: capitalize;color: $white;z-index: 2;position: relative;}
+
+// Tooltip Styles
+
+.cmsDashboardTooltip{float: left;position: relative;}
+.cmsDashboardTooltipMain{position: absolute;float: left;z-index: 99;}
+.cmsDashboardTooltipMain.small{width: 200px;}
+.cmsDashboardTooltipMain.small.bottomRight{top: calc(100% + 15px);right: 0px;}
+.cmsDashboardTooltipMain.small.bottomLeft{top: calc(100% + 15px);left: 0px;}
+.cmsDashboardTooltipMain.small.topRight{bottom: calc(100% + 5px);right: 0px;}
+.cmsDashboardTooltipMain.lightBg{background-color: $white;}
+.cmsDashboardTooltipMain.curvedBorder{border-radius: 10px;overflow: hidden;}
+.cmsDashboardTooltipMain.defaultShadow{box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);}
+.cmsDashboardTooltipInner{width: $full-width;float: left;}
+.cmsDashboardTooltipList{width: $full-width;float: left;position: relative;z-index: 99999;}
+.cmsDashboardTooltipListItem{width: $full-width;height: 45px;float: left;position: relative;padding: 0px 20px;display: flex;align-items: center;cursor: pointer;border-bottom: 1px solid $dashboard-border-bg;}
+.cmsDashboardTooltipListItem:hover{background-color: $dashboard-border-bg;}
+.cmsDashboardTooltipListItem:last-child{border: 0px;}
+.cmsDashboardTooltipListItem.hasIcon{padding: 0px 20px 0px 50px;}
+.cmsDashboardTooltipListItemIcon{position: absolute;left: 5px;top: 0px;height: 45px;width: 45px;@include flexCenter();}
+.cmsDashboardTooltipListItemIco{color: $dashboard-grey;}
+.cmsDashboardTooltipListItemLable{width: $full-width;float: left;}
+.cmsDashboardTooltipListItemLableTxt{color: $dashboard-grey;float: left;font-family: font("medium");font-size: 0.9em;text-transform: capitalize;}
+.cmsDashboardTooltipContent{width: $full-width;float: left;padding: 10px 20px;position: relative;z-index: 9999;}
+.cmsDashboardTooltipContentTxt{color: $dashboard-grey;float: left;font-family: font("medium");font-size: 0.9em;text-transform: capitalize;}
+
+.cmsCoreBackdrop{width: $full-width;height: $full-width;position: fixed;left: 0px;top: 0px;z-index: 999;}
+.cmsCoreBackdrop.dark{background-color: rgba(0, 0, 0, 0.7);}
+.cmsCoreBackdrop.light{background-color: rgba(255, 255, 255, 0.8);}
+.cmsCoreBackdrop.dull{background-color: rgba(255, 255, 255, 0.4);}
+
+.cmsCorePopUpComponent{width: $full-width;height: $full-width;float: left;position: fixed;left: 0px;top: 0px;z-index: 999;@include flexCenter();}
+.cmsCorePopUpContainer{float: left;border-radius: 16px;background-color: $white;min-width: 350px;min-height: 100px;position: relative;z-index: 9999;}
+.cmsCorePopUpContainer.maxWidth{max-width: 850px;max-height: 700px;}
+.cmsCorePopUpContainer.midWidth{width: 450px;max-height: 700px;}
+.cmsCorePopUpContainer.minWidth{width: 320px;max-height: 500px;}
+.cmsDashboardPopUpMain{width: $full-width;float: left;}
+.cmsDashboardPopUpHeading{width: $full-width;float: left;height: 55px;border-bottom: 2px solid $dashboard-border-bg;display: flex;align-items: center;}
+.cmsDashboardPopUpHeadingTxt{float: left;margin-left: 20px;font-size: 1.1em;font-family: font("semibold");text-transform: capitalize;color: $blue-primary;}
+.cmsDashboardPopUpContentActions{width: $full-width;float: left;position: relative;@include flexCenter();}
+.cmsDashboardPopUpContentActions.hasAction{padding-bottom: 60px;}
+.cmsDashboardPopUpContent{float: left;max-height: 500px;overflow: hidden;overflow-y: auto;width: $full-width;}
+.cmsDashboardPopUpActions{position: absolute;bottom: 0px;left: 0px;width: $full-width;height: 60px;float: left;display: flex;align-items: center;}
+
+
+/* List Filters Style Starts */
+
+// Alphabetical Sorting Filter Style Starts 
+
+.filterByAlphabet{width: $full-width;float: left;background-color: $page_bg;height: 40px;border-radius: 6px;max-width: $full-width;overflow-x: auto;overflow-y: hidden;display: flex;justify-content: center;padding: 0px 5px;}
+.filterByAlphabetInner{width: $full-width;float: left;display: flex;align-items: center;flex-direction: row;justify-content: space-between;}
+.filterByAlphabetSingle{height: 40px;float: left;@include flexCenter();cursor: pointer;padding: 0px 10px;}
+.filterByAlphabetSingle:hover{background: $disabledBg;@include bgColorHoverAnim();}
+.filterByAlphabetSingle.active{background: $disabledBg;}
+.filterByAlphabetSingle.active .filterByAlphabetSingleTxt{color: $blue-primary;}
+.filterByAlphabetSingleTxt{text-transform: capitalize;font-family: font("semibold");color: $dashboard-grey-dark;font-size: 0.85em;}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.filterByAlphabet::-webkit-scrollbar {display: none;}
+  
+/* Hide scrollbar for IE, Edge and Firefox */
+.filterByAlphabet {-ms-overflow-style: none;  /* IE and Edge */scrollbar-width: none;  /* Firefox */}
+
+// Alphabetical Sorting Filter Style Ends 
+
+/* List Filters Style Ends */

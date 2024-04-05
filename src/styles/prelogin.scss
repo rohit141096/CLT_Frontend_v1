@@ -1,0 +1,97 @@
+.preLoginPage{width: $full-width;min-height: 100vh;float: left;padding: 50px 50px;@include flexCenter();}
+.preLoginContentCard{width: $tab;min-height: 550px;float: left;border-radius: $border-radius-1x;background-color: $white;box-shadow: $section-card-shadow;display: flex;flex-direction: row;overflow: hidden;}
+.preLoginFormSection{width: 40%;float: left;display: flex;padding: 60px 50px;}
+.preLoginFormSectionContent{width: $full-width;float: left;display: flex;flex-direction: column;}
+.preLoginFormSectionLogos{width: $full-width;float: left;}
+.preLoginFormSectionLogoSingle{float: left;}
+.preLoginFormSectionLogoSingleImg{float: left;height: 60px;}
+.preLoginFormSectionLogoSeperator{float: left;padding: 0px 25px;}
+.preLoginFormSectionLogoSeperatorMain{width: 1px;height: 60px;float: left;background-color: $border_grey;}
+.preLoginFormSectionHeadingsAction{width: $full-width;float: left;margin: 40px 0px 40px;}
+.preLoginFormSectionHeading{width: $full-width;float: left;}
+.preLoginFormSectionHeadingTxt{float: left;font-family: font("bold");font-size: 2.2em;color: $text-heading;}
+.preLoginFormSectionDescriptionAction{width: $full-width;float: left;position: relative;margin-top: 8px;}
+.preLoginFormSectionDescription{width: $full-width;float: left;}
+.preLoginFormSectionDescriptionTxt{float: left;text-align: left;font-size: 1em;color: $text-description;font-family: font("medium");margin-bottom: 15px;line-height: 1.5em;}
+.preLoginFormSectionDescriptionTxt:last-child{margin: 0px;}
+.preLoginFormSectionAction{float: left;position: absolute;right: 0px;bottom: -1px;border-bottom: 2px solid $text-action-primary;background-color: $white;}
+.preLoginFormSectionActionTxt{float: left;font-size: 1em;color: $text-action-primary;font-family: font("medium");padding-bottom: 1px;cursor: pointer;transition: 0.2s;}
+.preLoginFormSectionAction:hover{border-bottom: 2px solid $text-action-primary-dark;}
+.preLoginFormSectionAction:hover .preLoginFormSectionActionTxt{color: $text-action-primary-dark;@include txtColorHoverAnim();}
+.preLoginFormContainer{width: $full-width;float: left;}
+
+.preLoginContentSection{width: 60%;float: left;background-color: $blue-light;background-image: url('../../public/images/pre-login-bg-pattern-rings.png');background-size: cover;background-position: center;position: relative;display: flex;justify-content: center;padding: 60px 100px;flex-direction: column;}
+.preLoginContentSectionDottedPattern{width: 150px;float: left;position: absolute;right: 30px;top: 30px;z-index: 1;}
+.preLoginContentSectionDottedPatternImg{width: $full-width;float: left;}
+.preLoginContentSectionMain{width: $full-width;float: left;z-index: 2;}
+.preLoginContentSectionHeading{width: $full-width;float: left;}
+.preLoginContentSectionHeadingTxt{float: left;font-size: 3em;color: $white;font-family: font("bold");line-height: 56px;}
+.preLoginContentSectionDescription{width: $full-width;float: left;margin-top: 20px;}
+.preLoginFormSectionDescriptionML{width: $full-width;float: left;margin-top: 10px;}
+.preLoginContentSectionDescriptionTxt{width: $full-width;float: left;color: $dark-text-description;font-family: font("medium");line-height: 26px;font-size: 1em;}
+.preLoginContentSectionAvatarsDescription{width: $full-width;float: left;display: flex;flex-direction: row;align-items: center;margin-top: 25px;gap: 15px;}
+.preLoginContentSectionAvatars{float: left;}
+.preLoginContentSectionAvatarSingle{width: 40px;height: 40px;float: left;border: 3px solid $blue-light;overflow: hidden;border-radius: 40px;margin-left: -8px;position: relative;padding: 3px;background-color: $white;}
+.preLoginContentSectionAvatarSingle:nth-child(1){margin: 0px;z-index: 6;}
+.preLoginContentSectionAvatarSingle:nth-child(2){z-index: 5;}
+.preLoginContentSectionAvatarSingle:nth-child(3){z-index: 4;}
+.preLoginContentSectionAvatarSingle:nth-child(4){z-index: 3;}
+.preLoginContentSectionAvatarSingleImg{width: $full-width;height: $full-width;float: left;display: none;}
+.preLoginContentSectionAvatDesc{float: left;}
+.preLoginContentSectionAvatDescTxt{float: left;color: $dark-text-description;font-family: font("medium");font-size: 0.9em;}
+
+.preLoginContentSection2fa{width: $full-width;float: left;margin-top: 70px;}
+.preLoginContentSection2faInner{width: $full-width;float: left;position: relative;padding-left: 55px;}
+.preLoginContentSection2faDotLine{width: 25px;position: absolute;left: 0px;top: 0px;height: $full-width;float: left;display: flex;justify-content: center;}
+.preLoginContentSection2faLine{width: 4px;float: left;background-color: $white;height: $full-width;}
+.preLoginContentSection2faDetails{width: $full-width;float: left;display: flex;flex-direction: column;gap: 65px;}
+.preLoginContentSection2faDetailStep{width: $full-width;float: left;position: relative;}
+.preLoginContentSection2faDetailStepDot{position: absolute;left: -55px;top: -2px;width: 25px;height: 25px;float: left;}
+.preLoginContentSection2faDetailStepDotWhite{width: 25px;height: 25px;float: left;border-radius: 25px;background-color: $white;display: flex;align-items: center;justify-content: center;}
+.preLoginContentSection2faDetailStepDotBlue{width: 17px;height: 17px;float: left;background-color: $text-action-primary;border-radius: 17px;}
+.preLoginContentSection2faDetailStepDotLine{width: $full-width;height: $full-width;float: left;background-color: $blue-light;}
+.preLoginContentSection2faDetailStepDot.fullHight{height: $full-width !important;}
+.preLoginContentSection2faDetailStepLable{width: $full-width;float: left;margin-bottom: 15px;position: absolute;top: -35px;left: 0px;}
+.preLoginContentSection2faDetailStepLableTxt{padding: 0px 20px;height: 25px;background-color: $text-action-primary;float: left;color: $white;text-transform: uppercase;font-size: 0.75em;display: flex;align-items: center;font-family: font("semibold");}
+.preLoginContentSection2faDetailStepHeading{width: $full-width;float: left;margin-bottom: 15px;}
+.preLoginContentSection2faDetailStepHeadingTxt{float: left;font-size: 1.3em;color: $white;font-family: font("bold");line-height: 20px;}
+.preLoginContentSection2faDetailsStepDescription{width: $full-width;float: left;margin-bottom: 15px;}
+.preLoginContentSection2faDetailStepDescriptionTxt{width: $full-width;float: left;color: $dark-text-description;font-family: font("medium");line-height: 22px;font-size: 0.9em;}
+.preLoginContentSection2faDetailStepImages{width: $full-width;float: left;display: flex;flex-direction: row;gap: 10px}
+.preLoginContentSection2faDetailStepImageSingle{float: left;}
+.preLoginContentSection2faDetailStepImageSingleImg{float: left;cursor: pointer;}
+
+.preLoginFormSection2FA{width: $full-width;float: left;display: flex;flex-direction: column;margin-bottom: 10px;}
+.preLoginFormSection2FA.reduceTopMargin{margin-top: -15px;}
+.preLoginFormSection2FAQrCodeMain{width: $full-width;float: left;display: flex;justify-content: center;}
+.preLoginFormSection2FAQrCode{width: 170px;height: 170px;float: left;padding: 15px;border: 1px solid $border_grey;display: flex;align-items: center;justify-content: center;}
+.preLoginFormSection2FAQrCodeImg{width: 140px;height: 140px;float: left;}
+.preLoginFormSection2FAQrDescription{width: $full-width;float: left;margin-top: 20px;padding: 0px 20px;}
+.preLoginFormSection2FAQrDescriptionTxt{float: left;text-align: left;font-size: 0.9em;color: $text-description;font-family: font("medium");line-height: 1.5em;text-align: center;}
+.preLoginFormSection2FAQrDescriptionAction{font-size: 1em;color: $text-action-primary;font-family: font("bold");text-decoration: underline;text-transform: capitalize;margin-left: 6px;cursor: pointer;}
+
+.preLoginFormSection2FAScanQrAgainAction{width: $full-width;float: left;display: flex;justify-content: center;margin-bottom: 20px;}
+
+.resetPasswordRequestHeading{width: $full-width;float: left;}
+.resetPasswordRequestHeadingLable{width: 35%;float: left;}
+.resetPasswordRequestHeadingLableTxt{float: left;text-align: left;font-size: 1em;color: $text-description;font-family: font("medium");text-transform: capitalize;}
+.resetPasswordRequestHeadingContent{width: 65%;float: left;position: relative;padding-left: 15px;}
+.resetPasswordRequestHeadingSeperator{float: left;position: absolute;left: 0px;top: 0px;}
+.resetPasswordRequestHeadingSeperatorTxt{float: left;text-align: left;font-size: 1em;color: $text-description;font-family: font("medium");}
+.resetPasswordRequestHeadingContentTxt{float: left;text-align: left;font-size: 1em;color: $text-description;font-family: font("medium");text-transform: uppercase;}
+.resetPasswordRequestDetails{width: $full-width;float: left;margin-top: 10px;}
+.resetPasswordRequestDetailsStep{width: $full-width;float: left;}
+.resetPasswordRequestDetailsStepLable{width: 40%;float: left;}
+
+.resetPasswordRequestDetails{width: $full-width;float: left;margin: 15px 0px 0px;}
+.resetPasswordRequestDetailsStep{width: $full-width;float: left;margin-bottom: 10px;}
+.resetPasswordRequestDetailsStep:last-child{margin: 0px;}
+.resetPasswordRequestDetailsStepLable{width: 35%;float: left;}
+.resetPasswordRequestDetailsStepLableTxt{float: left;text-align: left;font-size: 0.8em;color: $text-description;font-family: font("medium");text-transform: capitalize;}
+.resetPasswordRequestDetailsStepContent{width: 65%;float: left;position: relative;padding-left: 15px;}
+.resetPasswordRequestDetailsStepSeperator{float: left;position: absolute;left: 0px;top: 0px;}
+.resetPasswordRequestDetailsStepSeperatorTxt{float: left;text-align: left;font-size: 0.8em;color: $text-description;font-family: font("medium");}
+.resetPasswordRequestDetailsStepContentTxt{float: left;text-align: left;font-size: 0.8em;color: $text-description;font-family: font("medium");text-transform: capitalize;}
+
+.resetPasswordRequestActions{margin-top: 5px;width: $full-width;float: left;}
+.resetPasswordRequestActionsInner{float: right;display: flex;flex-direction: row;gap: 15px;}

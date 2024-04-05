@@ -1,0 +1,16 @@
+.dashboardRightSidebar{width: 70px;height: $full-width;float: left;background-color: $white;border-left: 1px solid $dashboard-border-bg;}
+.dashboardRightSidebarHeader{width: 70px;height: 60px;float: left;display: flex;justify-content: center;align-items: center;background-color: $blue-primary;}
+.dashboardRightSidebarHeaderIcon{float: left;}
+.dashboardRightSidebarHeaderIco{float: left;font-size: 1.5em;color: $white;}
+.dashboardRightSidebarContent{width: $full-width;float: left;display: flex;flex-direction: column;gap: 15px;justify-content: center;align-items: center;padding: 20px 0px;}
+.dashboardRightSidebarPortal{width: 42px;height: 42px;float: left;position: relative;display: flex;justify-content: center;align-items: center;border: 1px solid $dashboard-border-bg;border-radius: 50%;cursor: pointer;}
+.dashboardRightSidebarPortalImage{float: left;opacity: 0.5;}
+.dashboardRightSidebarPortal:hover .dashboardRightSidebarPortalImage{opacity: 1;@include opacityColorHoverAnim();}
+.dashboardRightSidebarPortalImg{max-height: 24px;max-width: 24px;float: left;}
+.dashboardRightSidebarPortalCount{width: 14px;height: 14px;position: absolute;float: left;right: -4px;top: -2px;border-radius: 50%;overflow: hidden;z-index: 3;display: flex;align-items: center;justify-content: center;}
+.dashboardRightSidebarPortalCount.warning{background-color: $bubble-warning;}
+.dashboardRightSidebarPortalCount.success{background-color: $bubble-success;}
+.dashboardRightSidebarPortalCount.error{background-color: $bubble-error;}
+.dashboardRightSidebarPortalCount.primary{background-color: $bubble-primary;}
+.dashboardRightSidebarPortalCount.dark{background-color: $bubble-dark;}
+.dashboardRightSidebarPortalCountTxt{color: $white;font-size: 0.6em;font-family: font("semibold");}

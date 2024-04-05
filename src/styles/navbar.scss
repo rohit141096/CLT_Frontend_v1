@@ -1,0 +1,76 @@
+.dashboardNavBar{width: 300px;float: left;background-color: $blue-primary;height: $full-width;position: relative;box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.2);overflow-y: auto;padding: 0px 0px 20px 0px;}
+.dashboardNavBarHeader{height: 60px;width: $full-width;float: left;display: flex;flex-direction: row;justify-content: space-between;align-items: center;padding: 0px 15px;background-color: $blue-primary;position: sticky;top: 0px;left: 0px;z-index: 1;}
+.dashboardNavBarHeaderLogos{float: left;display: flex;flex-direction: row;gap: 10px;}
+.dashboardNavBarHeaderLogo{height: 30px;float: left;}
+.dashboardNavBarHeaderLogoImage{float: left;height: $full-width;}
+.dashboardNavBarHeaderLogoImg{float: left;height: $full-width;}
+.dashboardNavBarHeaderLogoSeperator{height: 30px;float: left;width: 1px;background-color: #334155;}
+.dashboardNavBarHeaderAction{float: left;margin-right: 10px;}
+.dashboardNavBarHeaderActionIcon{float: left;cursor: pointer;}
+.dashboardNavBarHeaderActionIco{font-size: 1.2em;color: $white;float: left;}
+.dashboardNavBarHeaderActionIco:hover{transform: rotate(15deg);@include transformColorHoverAnim();}
+
+.dashboardNavBarUserInfo{width: $full-width;float: left;margin-top: 20px;display: flex;flex-direction: column;padding: 0px 15px;}
+.dashboardNavBarUserInfoAvatarMain{width: $full-width;float: left;display: flex;justify-content: center;}
+.dashboardNavBarUserInfoAvatarImage{width: 94px;height: 94px;border: 3px solid $white;border-radius: 50%;overflow: hidden;box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.8);}
+.dashboardNavBarUserInfoAvatarImg{width: $full-width;height: $full-width;float: left;}
+.dashboardNavBarUserInfoDetails{width: $full-width;float: left;margin-top: 15px;}
+.dashboardNavBarUserInfoName{width: $full-width;float: left;display: flex;justify-content: center;}
+.dashboardNavBarUserInfoNameTxt{float: left;font-size: 1em;color: $white;font-family: font("semibold");text-transform: capitalize;@include singleLine();}
+.dashboardNavBarUserInfoEmail{width: $full-width;float: left;display: flex;justify-content: center;margin-top: 6px;}
+.dashboardNavBarUserInfoEmailTxt{float: left;font-size: 0.8em;color: $text-navbar-sub-heading;font-family: font("semibold");text-transform: lowercase;@include singleLine();}
+
+.dashboardNavBarContent{width: $full-width;float: left;display: flex;flex-direction: column;gap: 20px;padding: 0px 15px;margin-top: 30px;}
+.dashboardNavBarContentSection{width: $full-width;float: left;}
+.dashboardNavBarContentSectionHeadings{width: $full-width;float: left;padding: 0px 15px;display: flex;flex-direction: column;}
+.dashboardNavBarContentSectionHeading{width: $full-width;float: left;}
+.dashboardNavBarContentSectionHeadingTxt{float: left;font-size: 0.8em;color: $text-navbar-section-heading;font-family: font("semibold");text-transform: capitalize;text-transform: uppercase;@include singleLine();}
+.dashboardNavBarContentSectionSubHeading{width: $full-width;float: left;margin-top: 4px;}
+.dashboardNavBarContentSectionSubHeadingTxt{float: left;font-size: 0.7em;color: $text-navbar-sub-heading;font-family: font("medium");text-transform: capitalize;@include singleLine();}
+.dashboardNavBarContentSectionLinks{width: $full-width;float: left;margin-top: 10px;}
+
+.dashboardNavBarContentSectionLinkSubLinks{width: $full-width;float: left;margin-bottom: 3px;}
+.dashboardNavBarContentSectionLinkSubLinks:last-child{margin: 0px;}
+.dashboardNavBarContentSectionLink{width: $full-width;height: 50px;float: left;;position: relative;display: flex;flex-direction: row;gap: 20px;align-items: center;padding: 0px 0px 0px 50px;border-radius: 5px;background-color: $blue-primary;cursor: pointer;@include noSelect();}
+
+.dashboardNavBarContentSectionLink:hover{background-color: $navbar-link-hover-bg;@include bgColorHoverAnim();}
+.dashboardNavBarContentSectionLink:hover .dashboardNavBarContentSectionLinkIcon .dashboardNavBarContentSectionLinkIco{color: $white;}
+.dashboardNavBarContentSectionLink:hover .dashboardNavBarContentSectionLinkLables .dashboardNavBarContentSectionLinkLableHeading .dashboardNavBarContentSectionLinkLableHeadingTxt{color: $white;}
+.dashboardNavBarContentSectionLink.active{background-color: $navbar-link-hover-bg;}
+.dashboardNavBarContentSectionLink.active .dashboardNavBarContentSectionLinkIcon .dashboardNavBarContentSectionLinkIco{color: $white;}
+.dashboardNavBarContentSectionLink.active .dashboardNavBarContentSectionLinkLables .dashboardNavBarContentSectionLinkLableHeading .dashboardNavBarContentSectionLinkLableHeadingTxt{color: $white;}
+
+.dashboardNavBarContentSectionLink.bottomMargin{margin-bottom: 3px;}
+.dashboardNavBarContentSectionLink.bottomMargin:last-child{margin: 0px;}
+
+.dashboardNavBarContentSectionLinkIcon{width: 50px;height: 50px;float: left;display: flex;justify-content: center;align-items: center;position: absolute;left: 0px;top: 0px;}
+.dashboardNavBarContentSectionLinkIco{float: left;font-size: 1.1em;color: $text-navbar-sub-heading;}
+.dashboardNavBarContentSectionLinkLables{float: left;width: $full-width;display: flex;flex-direction: column;gap: 3px;}
+.dashboardNavBarContentSectionLinkLableHeading{float: left;width: $full-width;}
+.dashboardNavBarContentSectionLinkLableHeadingTxt{float: left;@include singleLine();font-size: 0.75em;color: $text-navbar-sub-heading;font-family: font("semibold");text-transform: capitalize;}
+.dashboardNavBarContentSectionLinkLableTagline{float: left;width: $full-width;}
+.dashboardNavBarContentSectionLinkLableTaglineTxt{float: left;@include singleLine();font-size: 0.65em;color: $text-navbar-item-tagline;font-family: font("regular");text-transform: capitalize;}
+
+.dashboardNavBarContentSectionLinkSubRouteIcon{position: absolute;right: 15px;float: left;height: $full-width;display: flex;align-items: center;}
+.dashboardNavBarContentSectionLinkSubRouteIco{float: left;color: $text-navbar-sub-heading;font-size: 0.85em;}
+.dashboardNavBarContentSectionLink:hover .dashboardNavBarContentSectionLinkSubRouteIcon .dashboardNavBarContentSectionLinkSubRouteIco{color: $white;}
+
+.dashboardNavBarContentSectionSubLinks{width: $full-width;float: left;margin-top: 3px;}
+.dashboardNavBarContentSectionSubLinkInner{width: $full-width;float: left;}
+
+.dashboardNavBarContentSectionLinkBadgeContainer{position: absolute;right: 15px;float: left;height: $full-width;display: flex;align-items: center;}
+.dashboardNavBarContentSectionLinkBadge{float: left;}
+.dashboardNavBarContentSectionLinkBadge.default{padding: 3px 10px;border-radius: 5px;}
+.dashboardNavBarContentSectionLinkBadge.circle{width: 26px;height: 26px;float: left;@include flexCenter();border-radius: 50%;}
+.dashboardNavBarContentSectionLinkBadge.rounded{padding: 3px 10px;float: left;border-radius: 20px;}
+.dashboardNavBarContentSectionLinkBadge.plain{float: left;padding: 0 !important;background: none !important;}
+.dashboardNavBarContentSectionLinkBadge.defaultBg{background-color: $navbar-badge-default;}
+.dashboardNavBarContentSectionLinkBadge.lightBg{background-color: $navbar-badge-light;}
+.dashboardNavBarContentSectionLinkBadge.warningBg{background-color: $navbar-badge-warning;}
+.dashboardNavBarContentSectionLinkBadge.primaryBg{background-color: $navbar-badge-primary;}
+.dashboardNavBarContentSectionLinkBadgeTxt{float: left;font-size: 0.65em;text-transform: capitalize;font-family: font("semibold");}
+.dashboardNavBarContentSectionLinkBadge.defaultBg .dashboardNavBarContentSectionLinkBadgeTxt{color: $blue-primary;}
+.dashboardNavBarContentSectionLinkBadge.lightBg .dashboardNavBarContentSectionLinkBadgeTxt{color: $white;}
+.dashboardNavBarContentSectionLinkBadge.warningBg .dashboardNavBarContentSectionLinkBadgeTxt{color: $white;}
+.dashboardNavBarContentSectionLinkBadge.primaryBg .dashboardNavBarContentSectionLinkBadgeTxt{color: $white;}
+.dashboardNavBarContentSectionLinkBadge.plain .dashboardNavBarContentSectionLinkBadgeTxt{color: $navbar-badge-default;}

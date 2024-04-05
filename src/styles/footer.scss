@@ -1,0 +1,21 @@
+.dashboardFooter{width: $full-width;height: 62px;float: left;background-color: $blue-primary;position: absolute;left: 0px;bottom: 0px;display: flex;justify-content: space-between;align-items: center;padding: 0px 20px;z-index: 8;}
+.dashboardFooterLeft{float: left;display: flex;flex-direction: row;gap: 10px;}
+.dashboardFooterButton{padding: 0px 25px;height: 40px;float: left;border-radius: 30px;display: flex;align-items: center;gap: 13px;cursor: pointer;@include noSelect();}
+.dashboardFooterButton.primary{background-color: $button-action-primary;}
+.dashboardFooterButton.primary:hover{background-color: $button-action-primary-dark;@include bgColorHoverAnim();}
+.dashboardFooterButton.greyDark{background-color: $bubble-dark-transparent;}
+.dashboardFooterButton.greyDark:hover{background-color: $bubble-dark-transparent-dark;@include bgColorHoverAnim();}
+.dashboardFooterButtonIcon{float: left;}
+.dashboardFooterButtonIco{float: left;color: $white;font-size: 1em;}
+.dashboardFooterButtonLable{float: left;}
+.dashboardFooterButtonLableTxt{color: $white;font-size: 0.85em;font-family: font("medium");text-transform: capitalize;}
+.dashboardFooterRight{float: left;display: flex;flex-direction: row;gap: 25px;align-items: center;}
+.dashboardFooterCopyright{float: left;}
+.dashboardFooterCopyrightTxt{float: left;font-size: 0.85em;color: $white;font-family: font("regular");text-transform: capitalize;}
+.dashboardFooterCMSv{float: left;}
+.dashboardFooterCMSvTxt{float: left;font-size: 0.85em;color: $white;font-family: font("regular");}
+.dashboardFooterPoweredBy{float: left;display: flex;flex-direction: row;gap: 10px;align-items: center;}
+.dashboardFooterPoweredByLable{float: left;}
+.dashboardFooterPoweredByLableTxt{float: left;font-size: 0.85em;color: $white;font-family: font("medium");text-transform: capitalize;}
+.dashboardFooterPoweredByLogo{float: left;}
+.dashboardFooterPoweredByLogoImg{float: left;height: 30px;}

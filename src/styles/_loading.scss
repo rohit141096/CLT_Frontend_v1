@@ -1,0 +1,105 @@
+/* STYLED LOADER STARTS */
+
+.styledLoader{width: $full-width;height: $full-width;position: absolute;top: 0;left: 0;display: flex;justify-content: center;align-items: center;cursor: not-allowed;}
+.styledLoader .ball{width: 20px;height: 20px;background-color: $white;border-radius: 50%;display: inline-block;-webkit-animation: motion 3s cubic-bezier(0.77, 0, 0.175, 1) infinite;animation: motion 3s cubic-bezier(0.77, 0, 0.175, 1) infinite;}
+
+.styledLoader.dashboard.fill{background-color: $bubble-primary;}
+.styledLoader.dashboard.fill .ball{background-color: $white;}
+
+.styledLoader.primary.fill{background-color: $blue-primary;}
+.styledLoader.primary.fill .ball{background-color: $white;}
+
+.styledLoader.disabled.fill{background-color: $disabledBg;}
+.styledLoader.disabled.fill .ball{background-color: $disabledTxt;}
+
+.styledLoader.error.fill{background-color: $text-error;}
+.styledLoader.error.fill .ball{background-color: $white;}
+
+.styledLoader.warning.fill{background-color: $text-warning;}
+.styledLoader.warning.fill .ball{background-color: $white;}
+
+.styledLoader.success.fill{background-color: $text-success;}
+.styledLoader.success.fill .ball{background-color: $white;}
+
+.styledLoader.white.fill{background-color: $white;}
+.styledLoader.white.fill .ball{background-color: $disabledTxt;}
+
+.styledLoader.dashboard.bordered{background-color: $bubble-primary;}
+.styledLoader.dashboard.bordered .ball{background-color: $white;}
+
+.styledLoader.primary.bordered{background-color: $blue-primary;}
+.styledLoader.primary.bordered .ball{background-color: $white;}
+
+.styledLoader.disabled.bordered{background-color: $disabledBg;}
+.styledLoader.disabled.bordered .ball{background-color: $disabledTxt;}
+
+.styledLoader.error.bordered{background-color: $text-error;}
+.styledLoader.error.bordered .ball{background-color: $white;}
+
+.styledLoader.warning.bordered{background-color: $text-warning;}
+.styledLoader.warning.bordered .ball{background-color: $white;}
+
+.styledLoader.success.bordered{background-color: $text-success;}
+.styledLoader.success.bordered .ball{background-color: $white;}
+
+.styledLoader.white.bordered{background-color: $white;}
+.styledLoader.white.bordered .ball{background-color: $disabledTxt;}
+
+.styledLoader.dashboard.underline{background-color: $bubble-primary;}
+.styledLoader.dashboard.underline .ball{background-color: $white;}
+
+.styledLoader.primary.underline{background-color: $blue-primary;}
+.styledLoader.primary.underline .ball{background-color: $white;}
+
+.styledLoader.disabled.underline{background-color: $disabledBg;}
+.styledLoader.disabled.underline .ball{background-color: $disabledTxt;}
+
+.styledLoader.error.underline{background-color: $text-error;}
+.styledLoader.error.underline .ball{background-color: $white;}
+
+.styledLoader.warning.underline{background-color: $text-warning;}
+.styledLoader.warning.bordered .ball{background-color: $white;}
+
+.styledLoader.success.underline{background-color: $text-success;}
+.styledLoader.success.underline .ball{background-color: $white;}
+
+.styledLoader.white.underline{background-color: $white;}
+.styledLoader.white.underline .ball{background-color: $disabledTxt;}
+  
+@-webkit-keyframes motion {
+    0% {
+        transform: translateX(0) scale(1);
+    }
+    25% {
+        transform: translateX(-50px) scale(0.3);
+    }
+    50% {
+        transform: translateX(0) scale(1);
+    }
+    75% {
+        transform: translateX(50px) scale(0.3);
+    }
+    100% {
+        transform: translateX(0) scale(1);
+    }
+}
+  
+@keyframes motion {
+    0% {
+        transform: translateX(0) scale(1);
+    }
+    25% {
+        transform: translateX(-50px) scale(0.3);
+    }
+    50% {
+        transform: translateX(0) scale(1);
+    }
+    75% {
+        transform: translateX(50px) scale(0.3);
+    }
+    100% {
+        transform: translateX(0) scale(1);
+    }
+}
+
+/* STYLED LOADER ENDS */

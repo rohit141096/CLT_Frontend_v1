@@ -1,0 +1,103 @@
+/* COLORS */
+
+$page_bg: #f1f5f9;
+$white: #fff;
+$black: #000;
+
+$border_grey: #bdbdbd;
+$input_border: #d3d3d3;
+
+$blue-lighter: #2c384b;
+$blue-light: #1e293b;
+$blue-primary: #111828;
+
+$text-heading: #111828;
+$text-description: #454c57;
+$dark-text-description: #bdbdbd;
+
+$text-action-primary: #5046e5;
+$text-action-primary-dark: #0d0678;
+
+$button-action-primary: #4f46e5;
+$button-action-primary-dark: #2820bb;
+
+$text-error: #e53935;
+$text-error-hover: #c5211d;
+$text-warning: #e1b300;
+$text-warning-hover: #b8940a;
+$text-success: #43a047;
+$text-success-hover: #267d29;
+$disabledBg: #e0e0e0;
+$disabledTxt: #a9abac;
+
+$bubble-warning: #ffc107;
+$bubble-success: #4caf50;
+$bubble-error: #ef5350;
+$bubble-primary: #4f46e5;
+$bubble-primary-dark: #2318db;
+$bubble-dark: #1e293b;
+$bubble-dark-transparent: #334155;
+$bubble-dark-transparent-dark: #000000;
+
+$text-navbar-sub-heading: #9ca3af;
+$text-navbar-section-heading: #818cf8;
+$text-navbar-item-tagline:#94a3b8;
+
+$navbar-badge-default: #27a69a;
+$navbar-badge-light: #ec0c8e;
+$navbar-badge-warning: #ffc107;
+$navbar-badge-primary: #4f46e5;
+
+$navbar-link-hover-bg: #29303d;
+$dashboard-border-bg: #eaeef4;
+
+$dashboard-grey: #6b7280;
+$dashboard-grey-dark: #6d6d6d;
+
+$dashboard-sky-blue: #2196f3;
+$dashboard-sky-blue-dark: #1e88e5;
+
+$dashboard-red: #f44336;
+$dashboard-red-dark: #e53935;
+
+$dashboard-yellow: #ffc107;
+$dashboard-yellow-dark: #e1b300;
+
+$dashboard-green: #4caf50;
+$dashboard-green-dark: #43a047;
+
+$dashboard-bordered-card-border: #e2e8f0;
+$dashboard-bordered-card-bg: #f6f9fb;
+
+$dashboard-hover-grey: #f5f5f5;
+
+/* FONTS */
+$font: (
+    "thin": "Inter Thin",
+    "light": "Inter Light",
+    "extralight": "Inter ExtraLight",
+    "regular": "Inter Regular",
+    "medium": "Inter Medium",
+    "semibold": "Inter SemiBold",
+    "bold": "Inter Bold",
+    "extrabold": "Inter ExtraBold",
+    "black": "Inter Black"
+);
+
+/* WIDTHS */
+$mobile: 650px;
+$tab: 1200px;
+$small: 1400px;
+$medium: 1750px;
+$large: 2000px;
+
+$fixed-width: 1150px;
+$full-width: 100%;
+
+/* SPACINGS */
+$padding: 25px;
+$border-radius-1x: 15px;
+$border-radius-2x: 20px;
+
+/* SHADOWS */
+$section-card-shadow: 0px 0px 10px rgba(0, 0, 0, 0.03);

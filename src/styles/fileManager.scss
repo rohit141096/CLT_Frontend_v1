@@ -1,0 +1,146 @@
+.fileManagerCard{width: $full-width;float: left;padding: 15px 25px 25px;}
+.fileManagerFiltersContainer{width: $full-width;float: left;display: flex;justify-content: space-between;flex-direction: row;}
+.fileManagerFilters{float: left;display: flex;flex-direction: row;gap: 25px;align-items: center;}
+.fileManagerFiltersLayout{float: left;display: flex;flex-direction: row;gap: 15px;align-items: center;}
+.fileManagerFiltersLayoutIcon{float: left;cursor: pointer;}
+.fileManagerFiltersLayoutIco{color: $border_grey;font-size: 1.5em;}
+.fileManagerFiltersLayoutIco:hover{color: $blue-primary;@include txtColorHoverAnim();}
+.fileManagerFiltersLayoutIco.active{color: $blue-primary;}
+.fileManagerFiltersMain{float: left;display: flex;flex-direction: row;gap: 15px;}
+.fileManagerFilterSingle{width: 200px;float: left;}
+.fileManagerFiltersAction{float: left;display: flex;align-items: center;}
+
+.fileManagerContentSidebar{width: $full-width;float: left;margin-top: 30px;position: relative;}
+.fileManagerContentContainer{width: $full-width;float: left;}
+.fileManagerContentContainer.hasSidebar{width: calc($full-width - 370px);padding-right: 30px;border-right: 2px solid $dashboard-bordered-card-border;}
+.fileManagerContentSection{width: $full-width;float: left;padding: 25px;border-radius: 15px;border: 1px solid $dashboard-bordered-card-border;background: $dashboard-bordered-card-bg;margin-bottom: 25px;}
+.fileManagerContentSection:last-child{margin: 0px;}
+.fileManagerContentSectionHeading{width: $full-width;float: left;}
+.fileManagerContentSectionHeadingTxt{float: left;font-family: font("semibold");color: $dashboard-grey;}
+
+.fileManagerContentSectionList{width: $full-width;float: left;display: flex;flex-direction: row;flex-wrap: wrap;margin-top: 25px;gap: 25px;}
+.fileManagerContentSectionListSingle{width: 200px;float: left;cursor: pointer;}
+.fileManagerContentSectionListSingleFileType{width: $full-width;float: left;display: flex;justify-content: center;margin-top: -10px;}
+.fileManagerContentSectionListSingleFolderIcon{float: left;}
+.fileManagerContentSectionListSingleFileTypeImage{width: $full-width;height: 80px;display: flex;justify-content: center;}
+.fileManagerContentSectionListSingleFileTypeImageInner{width: 80px;height: 80px;border: 1px solid $page_bg;border-radius: 10px;overflow: hidden;padding: 5px;}
+.fileManagerContentSectionListSingleFileTypeImageContainer{width: 68px;height: 68px;float: left;border-radius: 5px;background-position: center;background-size: cover;}
+.fileManagerContentSectionListSingleFileTypeIcon{float: left;height: 80px;display: flex;align-items: center;}
+.fileManagerContentSectionListSingleFileTypeIco{float: left;font-size: 3em;color: $border_grey;}
+.fileManagerContentSectionListSingleFolderDetails{width: $full-width;float: left;padding: 20px;}
+.fileManagerContentSectionListSingleFolderName{width: $full-width;float: left;display: flex;justify-content: center;}
+.fileManagerContentSectionListSingleFolderNameTxt{color: $dashboard-sky-blue-dark;text-transform: capitalize;font-family: font("semibold");font-size: 1em;@include singleLine();}
+.fileManagerContentSectionListSingleFolderStats{width: $full-width;float: left;margin-top: 6px;display: flex;justify-content: center;}
+.fileManagerContentSectionListSingleFolderStatsContent{float: left;}
+.fileManagerContentSectionListSingleFolderStatCount{float: left;font-size: 0.9em;text-transform: capitalize;color: $dashboard-grey;font-family: font("semibold");margin-right: 5px;}
+.fileManagerContentSectionListSingleFolderStatLable{float: left;font-size: 0.9em;text-transform: capitalize;color: $dashboard-grey;font-family: font("medium");}
+
+.fileManagerContentSectionListSingleFileDetails{width: $full-width;float: left;padding: 10px 20px 25px;}
+.fileManagerContentSectionListSingleFileName{width: $full-width;float: left;display: flex;justify-content: center;}
+.fileManagerContentSectionListSingleFileNameTxt{float: left;font-size: 0.9em;text-transform: capitalize;color: $dashboard-grey;font-family: font("medium");@include singleLine();}
+
+.fileManagerSidebar{width: 340px;float: left;margin-left: 30px;}
+.fileManagerSidebarInner{width: $full-width;float: left;}
+.fileManagerSidebarFileFolderInfo{width: $full-width;float: left;border: 1px solid $dashboard-bordered-card-border;background: $dashboard-bordered-card-bg;border-radius: 15px;position: relative;height: 280px;@include flexCenter();}
+.fileManagerSidebarFileFolderInfoClose{position: absolute;right: 0px;top: 0px;width: 50px;height: 50px;@include flexCenter();cursor: pointer;}
+.fileManagerSidebarFileFolderInfoCloseIcon{float: left;}
+.fileManagerSidebarFileFolderInfoCloseIco{font-size: 1.8em;color: $border_grey;float: left;}
+.fileManagerSidebarFolderInfoIcon{float: left;}
+.fileManagerSidebarFolderInfoIco{font-size: 3em;color: $border_grey;float: left;}
+.fileManagerSidebarFileInfoIcon{float: left;}
+.fileManagerSidebarFileInfoIco{font-size: 3em;color: $border_grey;float: left;}
+.fileManagerSidebarImageInfo{width: 140px;height: 140px;float: left;border: 1px solid $disabledBg;border-radius: 10px;overflow: hidden;padding: 5px;@include flexCenter();}
+.fileManagerSidebarImageInfoVisual{width: 120px;height: 120px;float: left;border-radius: 5px;background-position: center;background-size: cover;}
+
+.fileManagerSidebarDetails{width: $full-width;float: left;display: flex;flex-direction: column;margin-top: 25px;}
+.fileManagerSidebarDetailsNameAction{width: $full-width;float: left;display: flex;flex-direction: row;justify-content: space-between;gap: 30px;align-items: flex-end;position: relative;}
+.fileManagerSidebarDetailsName{width: $full-width;float: left;padding-right: 130px;}
+.fileManagerSidebarDetailsNameTxt{width: $full-width;float: left;font-size: 1.3em;font-family: font("semibold");color: $dashboard-sky-blue-dark;text-transform: capitalize;@include singleLine();}
+.fileManagerSidebarDetailsAction{float: left;position: absolute;top: 0px;right: 0px;height: $full-width;display: flex;align-items: flex-end;}
+.ffileManagerSidebarDetailsActionTxt{float: left;font-size: 0.9em;text-transform: capitalize;padding-bottom: 1px;border-bottom: 1px solid $blue-lighter;color: $blue-lighter;cursor: pointer;margin-bottom: 2px;}
+.ffileManagerSidebarDetailsActionTxt:hover{color: $black;border-bottom: 1px solid $black;@include txtColorHoverAnim();}
+
+.fileManagerSidebarDetailsLableSteps{width: $full-width;float: left;margin-top: 25px;}
+.fileManagerSidebarDetailsLable{width: $full-width;float: left;padding-bottom:10px;border-bottom: 2px solid $dashboard-bordered-card-border;}
+.fileManagerSidebarDetailsLableTxt{float: left;text-transform: capitalize;color: $blue-primary;font-family: font("medium");}
+.fileManagerSidebarDetailsStepContainer{width: $full-width;float: left;}
+.fileManagerSidebarDetailsStep{width: $full-width;float: left;padding-bottom: 10px;border-bottom: 2px solid $dashboard-bordered-card-border;margin-top: 25px;position: relative;padding-left: 130px;}
+.fileManagerSidebarDetailsStepLable{float: left;width: 130px;position: absolute;left: 0px;top: 0px;height: $full-width;display: flex;align-items: flex-start;}
+.fileManagerSidebarDetailsStepLableTxt{color: $disabledTxt;text-transform: capitalize;font-size: 0.9em;font-family: font("medium");}
+.fileManagerSidebarDetailsStepValue{float: left;width: $full-width;display: flex;justify-content: flex-end;}
+.fileManagerSidebarDetailsStepValueTxt{color: $dashboard-grey;text-transform: capitalize;font-size: 0.9em;font-family: font("medium");float: left;@include singleLine();}
+
+.fileManagerSidebarDetailsActions{width: $full-width;float: left;margin-top: 30px;display: flex;flex-direction: row;gap: 15px;}
+.fileManagerSidebarDetailsActionSingle{width: 50%;float: left;}
+
+/* 
+
+Upload Medias Page Style Starts
+
+*/
+
+.uploadFilesDropzone{width: $full-width;float: left;height: 400px;position: relative;border: 2px dashed $blue-primary;border-radius: 15px;padding: 0px 100px;@include flexCenter();overflow: hidden;}
+.uploadFilesDropzone:hover{border: 2px dashed $bubble-primary;@include borderHoverAnim();}
+.uploadFilesDropzone:hover .uploadFilesDropzoneInner .uploadFilesDropzoneIcon .uploadFilesDropzoneIco{color: $bubble-primary;@include txtColorHoverAnim();}
+.uploadFilesDropzone:hover .uploadFilesDropzoneInner .uploadFilesDropzoneDetails .uploadFilesDropzoneHeading .uploadFilesDropzoneHeadingTxt{color: $bubble-primary;@include txtColorHoverAnim();}
+.uploadFilesDropzone:hover .uploadFilesDropzoneInner .uploadFilesDropzoneDetails .uploadFilesDropzoneDescription .uploadFilesDropzoneDescriptionTxt{color: $bubble-dark-transparent;@include txtColorHoverAnim();}
+.uploadFilesDropzoneInner{width: 600px;float: left;}
+.uploadFilesDropzoneIcon{width: $full-width;float: left;display: flex;justify-content: center;}
+.uploadFilesDropzoneIco{color: $blue-primary;font-size: 5em;float: left;}
+.uploadFilesDropzoneDetails{width: $full-width;float: left;margin-top: 30px;}
+.uploadFilesDropzoneHeading{width: $full-width;float: left;display: flex;justify-content: center;}
+.uploadFilesDropzoneHeadingTxt{float: left;text-align: center;font-family: font("semibold");color: $blue-primary;font-size: 1.3em;}
+.uploadFilesDropzoneDescription{width: $full-width;float: left;display: flex;flex-direction: column;gap: 7px;margin-top: 20px;}
+.uploadFilesDropzoneDescriptionTxt{float: left;font-size: 0.9em;text-align: center;color: $dashboard-grey;}
+.uploadFilesDropzoneInput{width: $full-width;height: $full-width;float: left;position: absolute;left: 0px;top: 0px;z-index: 3;}
+.uploadFilesDropzoneInputFile{width: $full-width;height: $full-width;float: left;opacity: 0.01;cursor: pointer;}
+
+/* 
+
+Upload Medias Pop Up Style Starts
+
+*/
+
+.uploadFilesDropzonePopUp{width: $full-width;float: left;height: 200px;position: relative;border: 2px dashed $blue-primary;border-radius: 15px;padding: 0px 100px;@include flexCenter();overflow: hidden;background-color: $white;}
+.uploadFilesDropzonePopUp:hover{border: 2px dashed $bubble-primary;@include borderHoverAnim();}
+.uploadFilesDropzonePopUp:hover .uploadFilesDropzonePopUpInner .uploadFilesDropzonePopUpIcon .uploadFilesDropzonePopUpIco{color: $bubble-primary;@include txtColorHoverAnim();}
+.uploadFilesDropzonePopUp:hover .uploadFilesDropzonePopUpInner .uploadFilesDropzonePopUpDetails .uploadFilesDropzonePopUpHeading .uploadFilesDropzonePopUpHeadingTxt{color: $bubble-primary;@include txtColorHoverAnim();}
+.uploadFilesDropzonePopUp:hover .uploadFilesDropzonePopUpInner .uploadFilesDropzonePopUpDetails .uploadFilesDropzonePopUpDescription .uploadFilesDropzonePopUpDescriptionTxt{color: $bubble-dark-transparent;@include txtColorHoverAnim();}
+.uploadFilesDropzonePopUpInner{width: 600px;float: left;}
+.uploadFilesDropzonePopUpIcon{width: $full-width;float: left;display: flex;justify-content: center;}
+.uploadFilesDropzonePopUpIco{color: $blue-primary;font-size: 3em;float: left;}
+.uploadFilesDropzonePopUpDetails{width: $full-width;float: left;margin-top: 15px;}
+.uploadFilesDropzonePopUpHeading{width: $full-width;float: left;display: flex;justify-content: center;}
+.uploadFilesDropzonePopUpHeadingTxt{float: left;text-align: center;font-family: font("semibold");color: $blue-primary;font-size: 1.3em;}
+.uploadFilesDropzonePopUpDescription{width: $full-width;float: left;display: flex;flex-direction: column;gap: 7px;margin-top: 10px;}
+.uploadFilesDropzonePopUpDescriptionTxt{float: left;font-size: 0.9em;text-align: center;color: $dashboard-grey;}
+.uploadFilesDropzonePopUpInput{width: $full-width;height: $full-width;float: left;position: absolute;left: 0px;top: 0px;z-index: 3;}
+.uploadFilesDropzonePopUpInputFile{width: $full-width;height: $full-width;float: left;opacity: 0.01;cursor: pointer;}
+
+/*
+
+Upload Medias Pop Up Style Ends
+
+*/
+
+
+/* Media Library Pop Up Styles Starts */
+
+.mediaLibraryPopUp{width: $full-width;float: left;}
+.mediaLibraryPopUpList{width: $full-width;float: left;display: flex;flex-direction: row;flex-wrap: wrap;gap: 20px;}
+.mediaLibraryPopUpListItem{width: 176px;float: left;cursor: pointer;position: relative;}
+.mediaLibraryPopUpListItemFileType{width: $full-width;float: left;display: flex;align-items: center;flex-direction: column;}
+.mediaLibraryPopUpListItemFileTypeIcon{float: left;}
+.mediaLibraryPopUpListItemFileTypeIcon{float: left;height: 120px;display: flex;align-items: center;}
+.mediaLibraryPopUpListItemFileTypeImage{width: $full-width;height: 120px;display: flex;justify-content: center;}
+.mediaLibraryPopUpListItemFileTypeImageInner{width: 120px;height: 120px;border: 1px solid $page_bg;border-radius: 10px;overflow: hidden;padding: 5px;}
+.mediaLibraryPopUpListItemFileTypeImageContainer{width: 108px;height: 108px;float: left;border-radius: 5px;background-position: center;background-size: contain;background-repeat: no-repeat;}
+.mediaLibraryPopUpListItemFileTypeIco{float: left;font-size: 3em;color: $border_grey;}
+.mediaLibraryPopUpListItemFileDetails{width: $full-width;float: left;padding: 10px 20px 25px;}
+.mediaLibraryPopUpListItemFileName{width: $full-width;float: left;display: flex;justify-content: center;}
+.mediaLibraryPopUpListItemFileNameTxt{float: left;font-size: 0.9em;text-transform: capitalize;color: $dashboard-grey;font-family: font("medium");@include singleLine();}
+.mediaLibraryPopUpListItemSelected{position: absolute;top: 5px;right: 7px;width: 18px;height: 18px;float: left;}
+.mediaLibraryPopUpListItemSelectedIco{color: $bubble-primary;float: left;font-size: 1.1em;}
+
+
+/* Media Library Pop Up Styles Starts */

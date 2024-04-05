@@ -1,0 +1,15 @@
+*{padding: 0px;margin: 0px;border:0px;list-style-type: none;box-sizing: border-box;outline: 0px;font-display: swap;font-family: font("regular");}
+a{text-decoration: none;color: inherit;}
+body{float: left;width: $full-width;background-color: $page_bg;overflow-x: hidden;}
+
+.noMargin{margin: 0px !important;}
+.emailTxt{text-transform: lowercase !important;}
+
+.center{@include flexCenter();}
+.hCenter{display: flex;justify-content: center;}
+.vCenter{display: flex;align-items: center;}
+.txtCenter{text-align: center;}
+.capitalize{text-transform: capitalize;}
+
+.ReactCrop__child-wrapper{float: left;}
+.CircularProgressbar .CircularProgressbar-text{font-size: 2.4em !important;fill: $dashboard-grey !important;font-family: font("medium");margin-top: 2px;}

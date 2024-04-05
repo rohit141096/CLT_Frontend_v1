@@ -1,0 +1,21 @@
+.dashboardHeader{width: $full-width;height: 60px;float: left;position: sticky;top: 0px;;background-color: $white;box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.06);display: flex;justify-content: space-between;align-items: center;flex-direction: row;padding: 0px 30px 0px 30px;z-index: 99;}
+.dashboardHeaderLeftMenu{float: left;display: flex;flex-direction: row;}
+.dashboardHeaderMenuSingle{float: left;position: relative;width: 40px;height: 40px;@include flexCenter();cursor: pointer;}
+.dashboardHeaderMenuSingle:hover{background-color: $dashboard-hover-grey;border-radius: 30px;@include bgColorHoverAnim();}
+.dashboardHeaderMenuSingleIco{color: $dashboard-grey-dark;float: left;font-size: 1.3em;}
+.dashboardHeaderMenuSingleIco.searchIco{font-size: 1.15em !important;}
+.dashboardHeaderMenuSingleDot{position: absolute;right: -6px;top: -8px;width: 11px;height: 11px;border: 2px solid $white;background-color: $button-action-primary;border-radius: 50%;overflow: hidden;}
+
+.dashboardHeaderRightMenuUser{float: right;display: flex;flex-direction: row;gap: 30px;}
+.dashboardHeaderRightMenu{float: left;display: flex;flex-direction: row;}
+
+.dashboardHeaderRightUser{float: left;display: flex;flex-direction: row;gap: 10px;align-items: center;cursor: pointer; @include noSelect();}
+.dashboardHeaderRightUserDetails{float: left;display: flex;align-items: flex-end;flex-direction: column;gap: 2px;}
+.dashboardHeaderRightUserName{float: left;}
+.dashboardHeaderRightUserNameTxt{float: left;font-size: 0.9em;color: $blue-light;font-family: font("semibold");text-transform: capitalize;}
+.dashboardHeaderRightUserRole{float: left;}
+.dashboardHeaderRightUserRoleTxt{float: left;font-size: 0.7em;color: $dashboard-grey;font-family: font("medium");text-transform: capitalize;}
+
+.dashboardHeaderRightUserAvatar{width: 40px;height: 40px;float: left;}
+.dashboardHeaderRightUserAvatarImage{width: $full-width;height: $full-width;float: left;border-radius: 50%;overflow: hidden;}
+.dashboardHeaderRightUserAvatarImg{width: $full-width;float: left;}
