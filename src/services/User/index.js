@@ -66,9 +66,8 @@ const loginUser = async (payload) => {
       const response = defaults.ServiceResponse({
         status: false,
         status_code: statusCodes.BAD_REQUEST,
-        message: "User login request failed.",
+        message: "User login request failed .",
       })
-
       return response
     }
   } catch (error) {
@@ -411,7 +410,6 @@ const getQrCodeToEnable2FA = async (payload) => {
         message: "Request successfull.",
         data: getQrToEnable2FAReq?.data?.data,
       })
-
       return response
     } else {
       const response = defaults.ServiceResponse({
@@ -575,7 +573,7 @@ const validateUser2faOTP = async (payload) => {
       const response = defaults.ServiceResponse({
         status: false,
         status_code: statusCodes.BAD_REQUEST,
-        message: "Something went wrong. Try again later.",
+        message: "Something went wrong. Try again later 1.",
       })
 
       return response
